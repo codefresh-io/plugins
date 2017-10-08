@@ -11,7 +11,7 @@ sources:
 maintainers: # (optional)
   - name: Alexei Ledenev
     email: alexei@codefresh.io
-icon: A URL to an SVG or PNG image to be used as an icon (optional)
+icon: https://avatars0.githubusercontent.com/u/29493517?v=4&s=400
 envs:
   - name: CHART_NAME
     type: required
