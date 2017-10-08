@@ -1,6 +1,6 @@
 image: codefresh/import-images
 tag: master
-version: 1.0.0
+version: 0.3.0
 description: Import metadata for existing Docker images into Codefresh
 keywords:
   - docker
