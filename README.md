@@ -1,0 +1,2 @@
+# plugins
+Codefresh plugins repository
