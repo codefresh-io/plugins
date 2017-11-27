@@ -26,6 +26,7 @@ steps:
 ## Environment Variables
 
 - **required** `NPM_TOKEN` - token of npm account
-for get the token please see https://docs.npmjs.com/private-modules/ci-server-config#getting-an-authentication-token
+
+for accessing the token please see https://docs.npmjs.com/private-modules/ci-server-config#getting-an-authentication-token
 
 
