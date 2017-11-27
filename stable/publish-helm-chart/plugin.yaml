@@ -1,0 +1,24 @@
+image: codefresh/plugin-publish-helm-chart
+tag: 0.0.1
+version: 0.1.0
+description: Publish a Helm chart to repository
+keywords:
+  - helm
+  - kubernetes
+home: https://github.com/codefresh-io/cf-publish-helm-chart
+sources:
+  - https://github.com/codefresh-io/cf-publish-helm-chart
+maintainers: # (optional)
+  - name: Vladimir Zhuravlev
+    email: vova@codefresh.io
+icon: https://avatars0.githubusercontent.com/u/29493517?v=4&s=400
+envs:
+  - name: CHART_NAME
+    type: required
+    description: Helm chart name to release
+  - name: CHART_VERSION
+    description: application chart version to install
+  - name: CHART_REPO_URL
+    description: Helm chart repository URL
+  - name: DEBUG
+    description: print verbose install output
