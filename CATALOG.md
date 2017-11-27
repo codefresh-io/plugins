@@ -5,6 +5,7 @@
 | Plugin                               | Description         | Tags                |
 | ------------------------------------ | ------------------- | ------------------- |
 | [Deploy Helm](stable/helm/README.md) | Deploy a Helm chart | `kubernetes` `helm` |
+| [Slack](stable/slack/README.md) | Send message to slack | `slack` |
 
 ## Incubator Plugins
 
