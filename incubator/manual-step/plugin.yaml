@@ -1,0 +1,18 @@
+image: codefresh/manual-step
+tag: master
+version: 0.1.0
+description: Pause execution till user connect to exposed URL and submit Form with required details
+keywords:
+  - docker
+  - manual
+home: https://github.com/jennyps/cf-manual-step
+sources:
+  - https://github.com/jennyps/cf-manual-step
+maintainers: # (optional)
+  - name: Jenny Passi
+    email: jenny@codefresh.io
+icon: https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2016/11/1479211772build-image-with-dockerfile_feature.jpg
+envs:
+  - name: APPROVAL_URL
+    type: required
+    description: url of manual approval form
