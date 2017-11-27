@@ -15,7 +15,7 @@ steps:
   ...
 
   release_to_env:
-    image: codefresh/plugin-helm
+    image: codefresh/plugin-helm:2.7.2
 
   ...
 
@@ -25,7 +25,7 @@ steps:
 
 - **required** `CHART_NAME` - Helm chart name
 - **required** `RELEASE_NAME` - Helm release name
-- **required** `KUBE_CONFIG` - Kubernetes configuration file (single line base64 encoded string)
+- **required** `KUBE_CONTEXT` - Kubernetes context to use (cluster name from Codefresh-Kubernetes integration)
 - `NAMESPACE` - target Kubernetes namespace
 - `CHART_VERSION` - application chart version to install
 - `CHART_REPO_URL` - Helm chart repository URL
@@ -33,4 +33,3 @@ steps:
 - `DEBUG` - print verbose install output
 - `WAIT` - block step execution till installation completed and all Kubernetes resources are ready
 - `TIMEOUT` - wait timeout (5min by default)
-

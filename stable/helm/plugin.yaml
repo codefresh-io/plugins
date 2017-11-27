@@ -1,6 +1,6 @@
 image: codefresh/plugin-helm
-tag: master
-version: 1.0.0
+tag: 2.7.2
+version: 1.1.0
 description: Release a Helm chart (update or install)
 keywords:
   - helm
@@ -13,6 +13,9 @@ maintainers: # (optional)
     email: alexei@codefresh.io
 icon: https://avatars0.githubusercontent.com/u/29493517?v=4&s=400
 envs:
+   - name: KUBE_CONTEXT
+    type: required
+    description: Kubernetes context to use
   - name: CHART_NAME
     type: required
     description: Helm chart name to release
@@ -33,7 +36,5 @@ envs:
     description: block step execution till installation completed and all Kubernetes resources are ready
   - name: TIMEOUT
     description: wait timeout (5min by default)
-volumes:
-  - name: /root/.kube/config
-    required: true
-    description: Kubernetes configuration file (**TODO** need to be implemented)
+context:
+  - kind: kubernetes
