@@ -13,9 +13,14 @@ steps:
 
   ...
 
-  publish_to_repo:
+  SendToSlack:
+    title: Sending message to slack
     image: codefresh/slack-message-sender
-
+    commands:
+      - slack-message-sender send
+    environment:
+    - WEBHOOK_URL=${{SLACK_WEBHOOK_URL}}
+    - SLACK_MESSAGE=${{CF_COMMIT_MESSAGE}}
   ...
 
 ```
@@ -23,4 +28,5 @@ steps:
 ## Environment Variables
 
 - **required** `WEBHOOK_URL` - Url to the channel. Slack official [docs](https://api.slack.com/incoming-webhooks)
+- **required** `SLACK_MESSAGE` - The message that will be sent
 - `DEBUG` - print verbose output
