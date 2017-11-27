@@ -1,5 +1,4 @@
-image: codefresh/plugin-publish-helm-chart
-tag: 0.0.1
+image: codefresh/slack-message-sender
 version: 0.1.0
 description: Send message to slack channel
 keywords:
