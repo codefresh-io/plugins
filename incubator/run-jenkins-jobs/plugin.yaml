@@ -1,28 +1,29 @@
-image: codefresh/import-images
+image: codefresh/run-jenkins-jobs
 tag: master
-version: 0.3.0
-description: Import metadata for existing Docker images into Codefresh
+version: 0.1.0
+description: Run single or multiple jenkins job from codefresh pipeline
 keywords:
   - docker
-home: https://github.com/codefresh-io/cf-import-image
+  - jenkins
+home: https://github.com/codefresh-io/cf-run-jenkins-jobs
 sources:
-  - https://github.com/codefresh-io/cf-import-image
+  - https://github.com/codefresh-io/cf-run-jenkins-jobs
 maintainers: # (optional)
-  - name: Alexei Ledenev
-    email: alexei@codefresh.io
+  - name: Vadim Waisman
+    email: vadim@codefresh.io
+- name: Jenny Passi
+    email: jenny@codefresh.io
 icon: https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2016/11/1479211772build-image-with-dockerfile_feature.jpg
 envs:
-  - name: IMAGES
+  - name: JENKINS_USERNAME
     type: required
-    description: list of comma separated image names (with tags)
-  - name: REGISTRY
-    description: registry DNS name (including port if needed, default to `docker.io`)
-  - USERNAME`: Docker registry user name (optional)
-  - name: PASSWORD
-    description: Docker registry password (optional)
-  - name: CF_URL
+    description: jenkins username
+  - name: JENKINS_TOKEN
     type: required
-    description: Codefresh URL, for example https://g.codefresh.io
-  - name: CF_API_TOKEN
+    description: jenkins token
+  - name: JENKINS_URL
     type: required
-    description: Codefresh API Token
+    description: jenkins machine url
+  - name: JENKINS_JOBS_LIST
+    type: required
+    description: list of jenkins jobs to run separated by spaces

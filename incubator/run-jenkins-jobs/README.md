@@ -1,7 +1,10 @@
 # Import Docker Images Codefresh Plugin
 
-Pause execution till user connect to exposed URL and submit Form with required details
+Run single or multiple jenkins job from codefresh pipeline 
 
 ## Environment Variables
 
-- `APPROVAL_URL`: url of manual approval form
+- `JENKINS_USERNAME`: jenkins username
+- `JENKINS_TOKEN`: token
+- `JENKINS_URL`: jenkins machine url
+- `JENKINS_JOB_LIST`: list of jenkins jobs to run separated by spaces
