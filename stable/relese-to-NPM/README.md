@@ -1,38 +1,35 @@
-README
+# Codefresh Helm Plugin
 
-The release-tonpm can be used to publish images to npm. 
-The below pipeline configuration demonstrates simple usage:
+Use Codefresh [Helm](https://helm.sh) plugin to deploy a Helm chart into specified (by context) Kubernetes cluster.
 
-  deploy_to_npm:
-  
-    title: Publishing To Npm 
-    image: codefresh/npm-publish:master
-    commands:    
-      - NPM_TOKEN=${{NPM_TOKEN}} npm run ci-publish     
-    when: 
-      branch: 
-        only: [ master ]
+## Usage
 
+Set required and optional environment variable and add the following step to your Codefresh pipeline:
 
-Parameter Reference
+```yaml
+---
+version: '1.0'
 
--NPM_TOKEN
+steps:
 
--npm access key
+  ...
 
- 
- 
-  Login into your project's NPM registry
+  release_to_env:
+    image: codefresh/plugin-helm:2.7.2
 
-  npm login --registry <registry url>
-  npm login --registry http://registry.npmjs.org
+  ...
 
-  Copy the token
-  The login step added a line to your ~/.npmrc file looking something like this
+```
 
-  //registry.npmjs.org/:_authToken=00000000-0000-0000-0000-000000000000
+## Environment Variables
 
-  Grab the auth token value 00000000-0000-0000-0000-000000000000 (older NPM proxies or registries like sinopia might have an older different token string format)
-
-  Set the token as CI environment variable
-  Go to your CI project settings and add a new variable NPM_TOKEN with the value you have just copied
+- **required** `CHART_NAME` - Helm chart name
+- **required** `RELEASE_NAME` - Helm release name
+- **required** `KUBE_CONTEXT` - Kubernetes context to use (cluster name from Codefresh-Kubernetes integration)
+- `NAMESPACE` - target Kubernetes namespace
+- `CHART_VERSION` - application chart version to install
+- `CHART_REPO_URL` - Helm chart repository URL
+- `DRY_RUN` - do a "dry run" installation (do not install anything, useful for Debug)
+- `DEBUG` - print verbose install output
+- `WAIT` - block step execution till installation completed and all Kubernetes resources are ready
+- `TIMEOUT` - wait timeout (5min by default)
