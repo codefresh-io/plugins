@@ -1,3 +1,5 @@
+[![Codefresh build status]( https://g.codefresh.io/api/badges/build?repoOwner=codefresh-io&repoName=plugins&branch=master&pipelineName=Kompose%20Plugin&accountName=codefresh-inc&type=cf-1)]( https://g.codefresh.io/repositories/codefresh-io/plugins/builds?filter=trigger:build;branch:master;service:5a1c225585e11a0001cb2de1~Kompose Plugin)
+
 # Codefresh Kompose Plugin
 
 Use Codefresh [Kompose](http://kompose.io) plugin to deploy or convert a Docker Compose file into Kubernetes resources.
