@@ -22,5 +22,5 @@ steps:
 
 ## Environment Variables
 
-- **required** `WEBHOOK_URL` - Url to the channel. Slack official [docs](https://gophers.slack.com/apps/new/A0F7XDUAZ-incoming-webhooks)
+- **required** `WEBHOOK_URL` - Url to the channel. Slack official [docs](https://api.slack.com/incoming-webhooks)
 - `DEBUG` - print verbose output

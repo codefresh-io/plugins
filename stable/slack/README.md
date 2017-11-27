@@ -14,5 +14,8 @@ envs:
   - name: WEBHOOK_URL
     type: required
     description: Url to the channel
+  - name: SLACK_MESSAGE
+    type: required
+    description: Message to send
   - name: DEBUG
     description: print verbose install output
