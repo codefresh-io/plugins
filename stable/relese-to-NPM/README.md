@@ -1,6 +1,6 @@
 # Codefresh Helm Plugin
 
-Use Codefresh [Helm](https://helm.sh) plugin to deploy a Helm chart into specified (by context) Kubernetes cluster.
+The release-to-npm can be used to publish images to npm. 
 
 ## Usage
 
@@ -14,22 +14,18 @@ steps:
 
   ...
 
-  release_to_env:
-    image: codefresh/plugin-helm:2.7.2
-
+     deploy_to_npm:  
+      title: Publishing To Npm 
+      image: codefresh/release-to-npm
+      commands:
+      - NPM_TOKEN=${{NPM_TOKEN}} npm run ci-publish 
   ...
 
 ```
 
 ## Environment Variables
 
-- **required** `CHART_NAME` - Helm chart name
-- **required** `RELEASE_NAME` - Helm release name
-- **required** `KUBE_CONTEXT` - Kubernetes context to use (cluster name from Codefresh-Kubernetes integration)
-- `NAMESPACE` - target Kubernetes namespace
-- `CHART_VERSION` - application chart version to install
-- `CHART_REPO_URL` - Helm chart repository URL
-- `DRY_RUN` - do a "dry run" installation (do not install anything, useful for Debug)
-- `DEBUG` - print verbose install output
-- `WAIT` - block step execution till installation completed and all Kubernetes resources are ready
-- `TIMEOUT` - wait timeout (5min by default)
+- **required** `NPM_TOKEN` - token of npm account
+for get the token please see https://docs.npmjs.com/private-modules/ci-server-config#getting-an-authentication-token
+
+
