@@ -13,4 +13,4 @@
 | [Import Docker Images](incubator/import-docker-images/README.md) | Import Docker images metadata into Codefresh | `docker` `codefresh` |
 | Plugin                                                           | Description                                  | Tags                 |
 | ---------------------------------------------------------------- | -------------------------------------------- | -------------------- |
-| [Import Docker Images](stable/ecs-deploy/README.md) | Deploy docker image to ECS | `ecs` `deploy` `containers` |
+| [Deploy to ECS](stable/ecs-deploy/README.md) | Deploy docker image to ECS | `ecs` `deploy` `containers` |
