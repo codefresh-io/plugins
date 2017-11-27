@@ -1,6 +1,6 @@
 # Codefresh Helm Plugin
 
-Use Codefresh [Helm](https://helm.sh) plugin to deploy a Helm chart into specified (by context) Kubernetes cluster.
+Use Codefresh [Helm](https://helm.sh) plugin to publish a Helm chart to repository.
 
 ## Usage
 
