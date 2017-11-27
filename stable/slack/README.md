@@ -1,21 +1,26 @@
-image: codefresh/slack-message-sender
-version: 0.1.0
-description: Send message to slack channel
-keywords:
-  - slack
-home: https://github.com/codefresh-io/slack-message-sender
-sources:
-  - https://github.com/codefresh-io/slack-message-sender
-maintainers: # (optional)
-  - name: Oleg Sucharevich
-    email: olegs@codefresh.io
-icon: https://upload.wikimedia.org/wikipedia/commons/7/76/Slack_Icon.png
-envs:
-  - name: WEBHOOK_URL
-    type: required
-    description: Url to the channel
-  - name: SLACK_MESSAGE
-    type: required
-    description: Message to send
-  - name: DEBUG
-    description: print verbose install output
+# Codefresh Helm Plugin
+
+Use Codefresh Slack plugin to send a message to a channel.
+
+## Usage
+
+
+```yaml
+---
+version: '1.0'
+
+steps:
+
+  ...
+
+  publish_to_repo:
+    image: codefresh/slack-message-sender
+
+  ...
+
+```
+
+## Environment Variables
+
+- **required** `WEBHOOK_URL` - Url to the channel. Slack official [docs](https://api.slack.com/incoming-webhooks)
+- `DEBUG` - print verbose output
