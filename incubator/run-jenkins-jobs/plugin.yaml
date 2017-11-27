@@ -1,7 +1,7 @@
 image: codefresh/run-jenkins-jobs
 tag: master
 version: 0.1.0
-description: Run single or multiple jenkins job from codefresh pipeline
+description: Run jenkins job from codefresh pipeline
 keywords:
   - docker
   - jenkins
@@ -24,6 +24,6 @@ envs:
   - name: JENKINS_URL
     type: required
     description: jenkins machine url
-  - name: JENKINS_JOBS_LIST
+  - name: JENKINS_JOB
     type: required
     description: list of jenkins jobs to run separated by spaces

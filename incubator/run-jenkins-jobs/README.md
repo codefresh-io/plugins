@@ -7,4 +7,4 @@ Run single or multiple jenkins job from codefresh pipeline
 - `JENKINS_USERNAME`: jenkins username
 - `JENKINS_TOKEN`: token
 - `JENKINS_URL`: jenkins machine url
-- `JENKINS_JOB_LIST`: list of jenkins jobs to run separated by spaces
+- `JENKINS_JOB`: list of jenkins jobs to run separated by spaces
