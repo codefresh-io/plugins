@@ -1,4 +1,4 @@
-image: codefresh/github-pull-request
+image: codefresh/github-pr-plugin
 tag: master
 version: 0.1.0
 description: Creates GitHub pull request
@@ -6,9 +6,9 @@ keywords:
   - docker
   - github
   - pull-request
-home: https://github.com/codefresh-io/cf-github-pull-request
+home: https://github.com/codefresh-io/github-pr-plugin
 sources:
-  - https://github.com/codefresh-io/cf-github-pull-request
+  - https://github.com/codefresh-io/github-pr-plugin
 maintainers: # (optional)
   - name: Nick Sakovich
     email: nick.sakovich@codefresh.io
@@ -17,6 +17,12 @@ envs:
   - name: GITHUB_TOKEN
     type: required
     description: Token for access to GitHub
+  - name: GITHUB_REPO_OWNER
+    type: required
+    description: Name of repo owner
+  - name: GITHUB_REPO_NAME
+    type: required
+    description: Name of repo
   - name: HEAD
     type: required
     description: The name of the branch where your changes are implemented. For cross-repository pull requests in the same network, namespace head with a user like this: username:branch
