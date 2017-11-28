@@ -11,7 +11,7 @@ sources:
 maintainers: # (optional)
   - name: Vadim Waisman
     email: vadim@codefresh.io
-  - name: Jenny Passi
+- name: Jenny Passi
     email: jenny@codefresh.io
 icon: https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2016/11/1479211772build-image-with-dockerfile_feature.jpg
 envs:
