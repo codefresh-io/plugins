@@ -1,4 +1,4 @@
-# Codefresh Helm Plugin
+# Codefresh release-to-npm Plugin
 
 The release-to-npm can be used to publish images to npm. 
 
