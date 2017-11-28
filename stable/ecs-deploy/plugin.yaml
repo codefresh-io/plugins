@@ -1,0 +1,36 @@
+image: codefresh/ecs
+tag: 2.7.2
+version: 1.1.0
+description: Release a Helm chart (update or install)
+keywords:
+  - ecs
+  - deploy
+  - containers
+home: https://github.com/codefresh-io/cf-deploy-ecs.git
+sources:
+  - https://github.com/codefresh-io/cf-deploy-ecs.git
+maintainers: # (optional)
+  - name: Oleg  Verhovsky
+    email: oleg@codefresh.io
+icon: https://www.metricly.com/wp-content/uploads/2017/07/ECSIcon.png
+envs:
+   - name: AWS_ACCESS_KEY_ID
+     type: required
+     description: Amazon access key ID
+  - name: AWS_SECRET_ACCESS_KEY
+      type: required
+      description: amazon secret key (make sure it's encrypted)
+  - name: aws-region
+    type: required
+    description: Helm release name
+  - name : region
+    type : required
+    description : aws region
+  - name : cluster_name
+    type : required
+    description : ecs cluster name
+  - name : service_name
+    type : required
+    description : ecs service name
+context:
+  - kind: Amazon ECS

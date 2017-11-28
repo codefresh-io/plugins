@@ -1,0 +1,18 @@
+version: '1.0'
+
+steps:
+
+  dry_run:
+    image: codefresh/plugin-kompose:v1.5.0
+    environment:
+      - NAMESPACE=kompose-test
+      - FILE=stable/kompose/example/docker-compose.yaml
+      - DEBUG=true
+      - DRY_RUN=true
+
+  deploy_to_cluster:
+    image: codefresh/plugin-kompose:v1.5.0
+    environment:
+      - NAMESPACE=kompose-test
+      - FILE=stable/kompose/example/docker-compose.yaml
+      - DEBUG=true
