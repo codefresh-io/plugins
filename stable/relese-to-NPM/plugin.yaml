@@ -1,13 +1,15 @@
 version: "1.0"
 
 steps:
- build_step:
-   type: build
-   dockerfile: Dockerfile
-   image-name: codefresh/cli
-   tag: ${{CF_BRANCH}}
- deploy_to_npm:  
-   title: Publishing To Npm 
-   image: codefresh/release-to-npm
-   commands:
-   - NPM_TOKEN=${{NPM_TOKEN}} npm run ci-publish 
+
+  build_step:
+    type: build
+    dockerfile: Dockerfile
+    image-name: codefresh/cli
+    tag: ${{CF_BRANCH}}
+    
+  deploy_to_npm:  
+    title: Publishing To Npm 
+    image: codefresh/release-to-npm
+    commands:
+    - NPM_TOKEN=${{NPM_TOKEN}} npm run ci-publish 
