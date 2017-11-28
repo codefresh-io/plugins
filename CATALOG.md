@@ -17,3 +17,4 @@
 | Plugin                                                           | Author      | Description                                  | Tags                 |
 | ---------------------------------------------------------------- | ----------- | -------------------------------------------- | -------------------- |
 | [Import Docker Images](incubator/import-docker-images/README.md) | @alexei-led | Import Docker images metadata into Codefresh | `docker` `codefresh` |
+| [Docker Service](incubator/docker-service/README.md)             | @kosta-codefresh | creates docker daemon and then use it in pipeline | `docker` `codefresh` |
