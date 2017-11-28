@@ -1,0 +1,14 @@
+image: codefresh/docker-service
+tag: master
+version: 0.1.0
+description: Codefresh docker-service plugin
+keywords:
+  - docker
+  - docker-machine
+  - docker-compose
+home: https://github.com/codefresh-io/docker-service
+sources:
+  - https://github.com/codefresh-io/docker-service
+maintainers: # (optional)
+  - name: Kosta Klevensky
+    email: kosta@codefresh.io
