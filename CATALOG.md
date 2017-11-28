@@ -9,7 +9,7 @@
 | [Slack](stable/slack/README.md)                 | @olegs-codefresh | Send message to slack                                                                    | `slack` `notify`                                          |
 | [Deploy to ECS](stable/ecs-deploy/README.md)    | @verchol         | Deploy docker image to ECS                                                               | `ecs` `deploy` `containers` `aws`                         |
 | [Deploy Kompose](stable/kompose/README.md)      | @alexei-led      | Deploy Docker Compose to Kubernetes cluster with Kubernetes [Kompose](http://kompose.io) | `docker` `docker-compose` `kompose` `deploy` `kubernetes` |
-| [GitHub PR](stable/github-pr/README.MD)         | @nick-codefresh  | Creates pull request to GitHub | |
+| [GitHub PR](stable/github-pr/README.MD)         | @nick-codefresh  | Creates pull request to GitHub | `github`  |
 
 ## Incubator Plugins
 
