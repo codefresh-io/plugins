@@ -47,7 +47,7 @@ see how to extracting the NPM_TOKEN https://docs.npmjs.com/private-modules/ci-se
 Go to your project settings and add a new variable `NPM_TOKEN` with the value you
 have just copied
 
-- Add script command (optional)
+- Add script command
 
 Create a script command to run the release-to-npm, in your `package.json`
 
