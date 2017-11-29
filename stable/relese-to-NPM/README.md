@@ -18,7 +18,7 @@ steps:
       title: Publishing To Npm 
       image: codefresh/release-to-npm
       commands:
-      - NPM_TOKEN=${{NPM_TOKEN}} npm run ci-publish 
+      - NPM_TOKEN=${{NPM_TOKEN}} npm run release-to-npm 
   ...
 
 ```
