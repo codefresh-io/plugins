@@ -1,13 +1,12 @@
-version: "1.0"
-
+version: '1.0'
 steps:
-
-  build_step:
+  BuildingDockerImage:
+    title: Building Docker Image
     type: build
+    image_name: zivcodefresh/npmtest
+    working_directory: ./
     dockerfile: Dockerfile
-    image-name: codefresh/cli
-    tag: ${{CF_BRANCH}}
-    
+    tag: '${{CF_BRANCH_TAG_NORMALIZED}}'
   deploy_to_npm:  
     title: Publishing To Npm 
     image: codefresh/release-to-npm
