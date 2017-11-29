@@ -16,7 +16,7 @@ steps:
 
      deploy_to_npm:  
       title: Publishing To Npm 
-      image: codefresh/release-to-npm
+      image: codefresh-io/release-to-npm
       commands:
       - NPM_TOKEN=${{NPM_TOKEN}} npm run release-to-npm 
   ...
