@@ -1,4 +1,4 @@
-# Import Docker Images Codefresh Plugin
+# Run Jenkins Job Codefresh Plugin
 
 Run single or multiple jenkins job from codefresh pipeline
 
