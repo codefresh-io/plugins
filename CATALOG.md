@@ -10,7 +10,7 @@
 | [Deploy to ECS](stable/ecs-deploy/README.md)    | @verchol         | Deploy docker image to ECS                                                               | `ecs` `deploy` `containers` `aws`                         |
 | [Deploy Kompose](stable/kompose/README.md)      | @alexei-led      | Deploy Docker Compose to Kubernetes cluster with Kubernetes [Kompose](http://kompose.io) | `docker` `docker-compose` `kompose` `deploy` `kubernetes` |
 | [GitHub PR](stable/github-pr/README.MD)         | @nick-codefresh  | Creates pull request to GitHub | `github`  |
-| [Run Jenkins Jobs](stable/run-jenkins-jobs/README.md)|@vadim-codefresh, @jennyps         | Run jenkins job from codefresh pipeline                             | `jenkins` `job`                                           |
+| [Run Jenkins Jobs](https://github.com/codefresh-io/plugins/tree/master/stable/run-jenkins-job/README.md)|@vadim-codefresh, @jennyps         | Run jenkins job from codefresh pipeline                             | `jenkins` `job`                                           |
 
 ## Incubator Plugins
 
