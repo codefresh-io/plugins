@@ -1,6 +1,6 @@
 # Run Jenkins Job Codefresh Plugin
 
-Run single or multiple jenkins job from codefresh pipeline
+Run jenkins job from codefresh pipeline
 
 ## Environment Variables
 
