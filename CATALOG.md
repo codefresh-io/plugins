@@ -10,11 +10,11 @@
 | [Deploy to ECS](stable/ecs-deploy/README.md)    | @verchol         | Deploy docker image to ECS                                                               | `ecs` `deploy` `containers` `aws`                         |
 | [Deploy Kompose](stable/kompose/README.md)      | @alexei-led      | Deploy Docker Compose to Kubernetes cluster with Kubernetes [Kompose](http://kompose.io) | `docker` `docker-compose` `kompose` `deploy` `kubernetes` |
 | [GitHub PR](stable/github-pr/README.MD)         | @nick-codefresh  | Creates pull request to GitHub | `github`  |
+| [Run Jenkins Jobs](incubator/run-jenkins-jobs/README.md)|@vadim-codefresh, @jennyps         | Run jenkins job from codefresh pipeline                             | `jenkins` `job`                                           |
 
 ## Incubator Plugins
 
 | Plugin                                                           | Description                                                         | Tags                                                      |
 | ---------------------------------------------------------------- | ------------------------------------------------------------------- | --------------------------------------------------------- |
 | [Import Docker Images](incubator/import-docker-images/README.md) | Import Docker images metadata into Codefresh                        | `docker` `codefresh`                                      |
-| [Deploy Kompose](incubator/kompose/README.md)                    | Deploy Docker Compose to Kubernetes cluster with Kubernetes Kompose | `docker` `docker-compose` `kompose` `deploy` `kubernetes` |
-| [Run Jenkins Jobs](incubator/run-jenkins-jobs/README.md)         | Run jenkins job from codefresh pipeline                             | `jenkins` `job`                                           |
+| [Deploy Kompose](incubator/kompose/README.md)                    | Deploy Docker Compose to Kubernetes cluster with Kubernetes Kompose | `docker` `docker-compose` `kompose` `deploy` `kubernetes` |                                         |
