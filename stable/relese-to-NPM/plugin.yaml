@@ -1,0 +1,14 @@
+version: '1.0'
+steps:
+  BuildingDockerImage:
+    title: Building Docker Image
+    type: build
+    image_name: zivcodefresh/npmtest
+    working_directory: ./
+    dockerfile: Dockerfile
+    tag: '${{CF_BRANCH_TAG_NORMALIZED}}'
+  deploy_to_npm:  
+    title: Publishing To Npm 
+    image: codefresh/release-to-npm
+    commands:
+    - NPM_TOKEN=${{NPM_TOKEN}} npm run release-to-npm
