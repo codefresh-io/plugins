@@ -11,6 +11,7 @@
 | [Deploy Kompose](stable/kompose/README.md)      | @alexei-led      | Deploy Docker Compose to Kubernetes cluster with Kubernetes [Kompose](http://kompose.io) | `docker` `docker-compose` `kompose` `deploy` `kubernetes` |
 | [GitHub PR](stable/github-pr/README.MD)         | @nick-codefresh  | Creates pull request to GitHub | `github`  |
 | [Run Jenkins Jobs](https://github.com/codefresh-io/plugins/tree/master/stable/run-jenkins-job/README.md)|@vadim-codefresh, @jennyps         | Run jenkins job from codefresh pipeline                             | `jenkins` `job`                                           |
+| [Deploy to DCOS](stable/dcos-app-deploy/README.md) | @eugene-codefresh | Deploy application image to DC/OS cluster | `dcos` `deploy` `containers` |
 
 ## Incubator Plugins
 
