@@ -12,7 +12,7 @@
 | [GitHub PR](stable/github-pr/README.MD)         | @nick-codefresh  | Creates pull request to GitHub | `github`  |
 | [Run Jenkins Jobs](https://github.com/codefresh-io/plugins/tree/master/stable/run-jenkins-job/README.md)|@vadim-codefresh, @jennyps         | Run jenkins job from codefresh pipeline                             | `jenkins` `job`                                           |
 | [Deploy to DCOS](stable/dcos-app-deploy/README.md) | @eugene-codefresh | Deploy application image to DC/OS cluster | `dcos` `deploy` `containers` |
-
+| [Interact with Jira](https://github.com/codefresh-io/plugins/tree/master/stable/jira/README.md)|@antweiss | Interact with Jira from codefresh pipelines                             | `jira` `workflow`      
 ## Incubator Plugins
 
 | Plugin                                                           | Description                                                         | Tags                                                      |

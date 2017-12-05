@@ -1,0 +1,33 @@
+# Codefresh Jira Plugin
+
+Use Codefresh Jira plugin to interact with a Jira instance.
+
+## Usage
+
+
+```yaml
+---
+version: '1.0'
+
+steps:
+
+  ...
+
+  UpdateJira:
+      title: Update Jira Issue
+      image: otomato/jira-cli:alpine
+      commands:
+        - yes n | jira-cli update ${JIRAID} --comment 'New docker image otomato/bringon:${{CF_SHORT_REVISION}}. Build log is here ${{CF_BUILD_URL}}' --jira-url ${JIRA_URL} -u ${JIRA_USR} -p ${JIRA_PWD}
+      when:
+        condition:
+            all:
+                JiraIdFound: 'match("${JIRAID}", "[A-Z]+-[0-9]+", true)'
+  ...
+
+```
+
+## Environment Variables
+
+- **required** `JIRA_URL` - Url to Jira instance
+- **required** `JIRA_USR` - Jira user
+- **required** `JIRA_PWD` - - Jira password

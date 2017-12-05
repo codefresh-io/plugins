@@ -1,0 +1,23 @@
+image: otomato/jira-cli
+tag: alpine
+version: 0.1.0
+description: Update a Jira ticket
+keywords:
+  - jira
+home: https://github.com/codefreshdemo/jira-cli-docker
+sources:
+  - https://github.com/codefreshdemo/jira-cli-docker
+maintainers: # (optional)
+  - name: Ant Weiss
+    email: anton@otomato.link
+icon: https://github.com/codefreshdemo/jira-cli-docker/blob/master/jira-logo.png
+envs:
+  - name: JIRA_URL
+    type: required
+    description: Url to Jira instance
+  - name: JIRA_USR
+    type: required
+    description: Jira user
+  - name: JIRA_PWD
+    type: required
+    description: Jira password
