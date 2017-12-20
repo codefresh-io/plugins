@@ -33,3 +33,4 @@ steps:
 - `DEBUG` - print verbose install output
 - `WAIT` - block step execution till installation completed and all Kubernetes resources are ready
 - `TIMEOUT` - wait timeout (5min by default)
+- `CUSTOM_VAR` - Add Helm options where `VAR` can be any value. For example, to override an image set in the values.yaml create an environmental variable called `CUSTOM_foo` with the value `--set custom_repo.image = new_val`
