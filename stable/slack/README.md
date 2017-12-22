@@ -1,4 +1,4 @@
-# Codefresh Helm Plugin
+# Codefresh Slack Plugin
 
 Use Codefresh Slack plugin to send a message to a channel.
 
