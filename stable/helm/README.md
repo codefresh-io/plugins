@@ -33,3 +33,4 @@ steps:
 - `DEBUG` - print verbose install output
 - `WAIT` - block step execution till installation completed and all Kubernetes resources are ready
 - `TIMEOUT` - wait timeout (5min by default)
+- `custom_var_name` - override helm variables with new values. For example, if you have a variable `image.tag` to override the variable would be `custom_image_tag`.
