@@ -1,6 +1,6 @@
 # Codefresh Helm Plugin
 
-Use Codefresh [Helm](https://helm.sh) plugin to deploy a Helm chart into specified (by context) Kubernetes cluster.
+Use Codefresh [Helm](https://helm.sh) plugin to deploy a Helm chart into specified (by context) Kubernetes cluster. 
 
 ## Usage
 
@@ -25,7 +25,7 @@ steps:
 
 - **required** `CHART_NAME` - Helm chart name
 - **required** `RELEASE_NAME` - Helm release name
-- **required** `KUBE_CONTEXT` - Kubernetes context to use (cluster name from Codefresh-Kubernetes integration)
+- **required** `KUBE_CONTEXT` - Kubernetes context to use
 - `NAMESPACE` - target Kubernetes namespace
 - `CHART_VERSION` - application chart version to install
 - `CHART_REPO_URL` - Helm chart repository URL
@@ -33,4 +33,27 @@ steps:
 - `DEBUG` - print verbose install output
 - `WAIT` - block step execution till installation completed and all Kubernetes resources are ready
 - `TIMEOUT` - wait timeout (5min by default)
-- `custom_var_name` - override helm variables with new values. For example, if you have a variable `image.tag` to override the variable would be `custom_image_tag`.
+
+### Overriding Helm Variables
+
+Codefresh Helm plugin supports overriding Helm variables.
+
+#### Naming Guide
+
+Prefix environment variable with `custom_` (or `CUSTOM_`) and replace any `.` character with `_`.
+
+```text
+# set ENV variable in Codefresh UI
+custom_myimage_pullPolicy=Always
+# Codefresh Helm plugin will add option below to the 'helm update --install' command
+--set myimage.pullPolicy=Always
+
+# Another example
+CUSTOM_redis_resources_requests_memory=256Mi
+# translates to ...
+--set redis.resources.requests.memory=256Mi
+```
+
+## Kubernetes Configuration
+
+Add Kubernetes integration to Codefresh: `> Account Settings > Integration > Kubernetes`. From now on, you can use added Kubernetes cluster in Codefresh pipeline, addressing its context by the name you see in `Clusters` menu.
