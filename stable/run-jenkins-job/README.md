@@ -1,20 +1,28 @@
-# Run Jenkins Job Codefresh Plugin
+# Trigger Jenkins Job
 
-Run jenkins job from codefresh pipeline
 
-## Environment Variables
+## Run locally
+`go get codefresh-io/cf-run-jenkins-job`
+```
+NAME:
+   cf-run-jenkins-job
 
-- `JENKINS_USER`: jenkins username
-- `JENKINS_TOKEN`: token
-- `JENKINS_URL`: jenkins machine url
-- `JENKINS_JOB`: jenkins job to run
+DESCRIPTION:
+   Trigger Jenkins Job
 
-Usage Example:
+## Mandatory Parameters:
+
+    JENKINS_URL     - Jenkins Master URL
+    JENKINS_USER    - Jenkins User Name
+    JENKINS_TOKEN   - Jenkins Token
+    JENKINS_JOB     - Jenkins Job Name
+
+## Usage Example:
 
 version: '1.0'
 steps:
   RunJenkins:
-   	title: Triggering Jenkins Job
+    title: Triggering Jenkins Job
     image: codefresh/cf-run-jenkins-job
     environment:
     - JENKINS_URL=http://<jenkins host>:<jenkins port>
