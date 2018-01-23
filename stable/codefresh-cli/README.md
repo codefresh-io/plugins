@@ -21,7 +21,7 @@ steps:
   run_pipeline:
     image: codefresh/cli
     description: run a pipeline
-    command: run pipeline PIPELINE_NAME REPO_OWNER REPO_NAME -b master
+    command: run PIPELINE_ID -b master
   ...
 
 ```
