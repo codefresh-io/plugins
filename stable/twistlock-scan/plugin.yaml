@@ -1,0 +1,65 @@
+image: docker.io/sctechdev/docker-security-scanner
+tag: master-c81e6d4
+version: 2.2
+description: Execute Twistlock image scan as build step
+keywords:
+  - Twistlock 2.2
+home: https://hub.docker.com/r/sctechdev/docker-security-scanner/
+sources:
+  - https://github.com/SC-TechDev/docker-security-scanner
+maintainers: 
+  - name: Dustin Van Buskirk
+    email: dev@vanbuskirk.me
+  - name: Varun Tagore
+    email: rondevops@gmail.com
+icon: A URL to an SVG or PNG image to be used as an icon (optional)
+envs:
+  - name: CF_METADATA
+    type: required
+    description: Boolean; combination with TL_UPLOAD stores Twistlock Report URL in TL_REPORT_URL var for Codefresh metadata annotation
+  - name: TL_CONSOLE_HOSTNAME
+    type: required
+    description: Hostname or IP of Twistlock Console
+  - name: TL_CONSOLE_PORT
+    type: required
+    description: Port of Twistlock Console
+  - name: TL_CONSOLE_USERNAME
+    type: required
+    description: Username of Twistlock Console
+  - name: TL_CONSOLE_PASSWORD
+    type: required
+    description: Password of Twistlock Console User
+  - name: TL_ONLY
+    type: required
+    description: Twistlock Console Scan Only (No Nexus)
+  - name: TL_TLS_ENABLED
+    type: optional
+    description: Boolean; Enable TLS connection to Twistlock Console
+  - name: TL_HASH
+    type: optional
+    description: Hashing Algorithm to use
+  - name: TL_UPLOAD
+    type: optional
+    description: Upload report to Twistlock Console and return URL (Overrides all other options only returns URL)
+  - name: TL_DETAILS
+    type: optional
+    description: Prints an itemized list of each vulnerability found by the scanner
+  - name: TL_ONLY_FIXED
+    type: optional
+    description: reports just the vulnerabilites that have fixes available
+  - name: TL_COMPLIANCE_THRESHOLD
+    type: optional
+    description: [ low, medium, high ] sets the the minimal severity compliance issue that returns a fail exit code
+  - name: TL_VULNERABILITY_THRESHOLD
+    type: optional
+    description: [ low, medium, high, critical ] sets the minimal severity vulnerability that returns a fail exit code
+volumes:
+  - name: /var/run/docker.sock:/var/run/docker.sock
+    required: true
+    description: Docker socket for DIND
+  - name: /var/lib/docker:/var/lib/docker
+    required: true
+    description: Docker lib access for DIND
+  - name: '${{CF_VOLUME_NAME}}:/codefresh/volume'
+    required: false
+    description: Volume required if setting Docker image metadata using Codefresh
