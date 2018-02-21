@@ -1,5 +1,4 @@
 image: codefresh/cfstep-helm
-tag: 2.8.1
 version: 1.0.0
 description: Release a Helm chart (update or install)
 keywords:

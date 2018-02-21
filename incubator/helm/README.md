@@ -8,7 +8,7 @@ Set required and optional environment variable and add the following step to you
 
 ```yaml
 Helm Upgrade:
-    image: 'codefresh/plugin-helm:2.8.0'
+    image: 'codefresh/cfstep-helm:2.8.0'
 ``` 
 
 ## Environment Variables
@@ -52,6 +52,11 @@ custom_env_open_STORAGE__AMAZON__BUCKET=my-s3-bucket
 ## Kubernetes Configuration
 
 Add Kubernetes integration to Codefresh: `> Account Settings > Integration > Kubernetes`. From now on, you can use added Kubernetes cluster in Codefresh pipeline, addressing its context by the name you see in `Clusters` menu.
+
+## Helm Reposiroty Configuration
+
+To install a chart from a private repository, add your repository in Codefresh, and inject it into the pipeline by selecting it under "Environment Variables" -> "Import from shared configuration".
+Then you can simple select the chart with the `CHART_NAME` variable. No additional configuration needed.
 
 ## Example
 
