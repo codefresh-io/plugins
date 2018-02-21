@@ -1,7 +1,7 @@
 image: codefresh/plugin-helm
 tag: 2.7.2
 version: 1.1.0
-description: Release a Helm chart (update or install)
+description: Release a Helm chart (update or install). There is a new Helm plugin with added capabilities, we are keeping this plugin as is for backward-compatibility. The new plugin is at /incubator/helm (https://github.com/codefresh-io/plugins/tree/master/incubator/helm)
 keywords:
   - helm
   - kubernetes
