@@ -1,6 +1,6 @@
 # Codefresh Helm Plugin
 
-Use Codefresh [Helm](https://helm.sh) plugin to deploy a Helm chart into specified Kubernetes cluster. 
+You can always use the `helm` command line in a freestyle step, like any other command line tool, but for Helm, You might want to check out out helm deployment step.
 
 ## Usage
 
@@ -44,9 +44,9 @@ CUSTOMFILE_prod='values-prod.yaml'
 If a variable contains a `_`, replace the `_` character with `__`.
 
 ```text
-custom_env_open_STORAGE__AMAZON__BUCKET=my-s3-bucket
+custom_env_open_SOME__VAR__REF=myvalue
 # translates to ...
---set env.open.STORAGE_AMAZON_BUCKET=my-s3-bucket
+--set env.open.SOME_VAR_REF=myvalue
 ```
 
 ## Kubernetes Configuration
