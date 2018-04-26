@@ -58,38 +58,3 @@ Add Kubernetes integration to Codefresh: `> Account Settings > Integration > Kub
 
 To install a chart from a private repository, add your repository in Codefresh, and inject it into the pipeline by selecting it under "Environment Variables" -> "Import from shared configuration".
 Then you can simple select the chart with the `CHART_NAME` variable. No additional configuration needed.
-
-## Example
-
-The example below will run `helm upgrade` using Helm chart with the name `mychart` located in `https://helmrepo.codefresh.io/codefresh/helm` Helm chart repository using the `myrelease` Helm release name against `mycluster` Kubernetes cluster in the `mynamespace` Kubernetes Namespace.
-
-```text
-CHART_NAME=mychart
-RELEASE_NAME=myrelease
-KUBE_CONTEXT=mycluster
-NAMESPACE=mynamespace
-CHART_REPO_URL=https://helmrepo.codefresh.io/codefresh/helm
-```
-
-```yaml
----
-version: '1.0'
-
-steps:
-
-  ...
-
-  Helm Upgrade:
-    title: Helm Upgrade
-    image: 'codefresh/plugin-helm:2.8.0'
-    environment:
-      - CHART_NAME=${{CHART_NAME}}
-      - RELEASE_NAME=${{RELEASE_NAME}}
-      - KUBE_CONTEXT=${{KUBE_CONTEXT}}
-      - NAMESPACE=${{NAMESPACE}}
-      - DEBUG_CHART=${{DEBUG_CHART}}
-      - CHART_REPO_URL=${{CHART_REPO_URL}}
-
-  ...
-
-```
