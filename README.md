@@ -13,7 +13,7 @@ See each plugin readme for more info and usage instructions.
 | [Deploy to ECS](plugins/ecs-deploy/README.md)| Deploy docker image to ECS| `ecs` `deploy` `containers` `aws`                         |
 | [Deploy Kompose](plugins/kompose/README.md)| Deploy Docker Compose to Kubernetes cluster with Kubernetes [Kompose](http://kompose.io) | `docker` `docker-compose` `kompose` `deploy` `kubernetes` |
 | [GitHub PR](plugins/github-pr/README.MD)| Creates pull request to GitHub | `github`  |
-| [Run Jenkins Jobs](https://github.com/codefresh-io/plugins/tree/master/stable/run-jenkins-job/README.md)| Run jenkins job from codefresh pipeline| `jenkins` `job`|
+| [Run Jenkins Jobs](plugins/run-jenkins-job/README.md)| Run jenkins job from codefresh pipeline| `jenkins` `job`|
 | [Deploy to DCOS](plugins/dcos-app-deploy/README.md) | Deploy application image to DC/OS cluster | `dcos` `deploy` `containers` |
 | [Interact with Jira](plugins/jira/README.md)|@antweiss | Interact with Jira from codefresh pipelines| `jira` `workflow`|
 | [release to npm](plugins/release-to-NPM/README.md) | Release npm modules from a pipeline | `npm` |
