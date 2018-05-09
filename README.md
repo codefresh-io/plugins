@@ -7,8 +7,8 @@ See each plugin readme for more info and usage instructions.
 
 | Plugin| Author| Description| Tags|
 | --- | --- | --- | --- |
+| [Helm](plugins/helm/README.md) | Deploy Helm charts | `kubernetes` `helm`|
 | [Codefresh Cli](plugins/codefresh-cli/README.md) | Operate on Codefresh resources | `cli` `codefresh`|
-| [Deploy Helm](plugins/helm-legacy/README.md)| [Deprecated - see Incubator/helm instead] Deploy a Helm chart| `kubernetes` `helm`|
 | [Slack](plugins/slack/README.md)| Send message to slack| `slack` `notify`|
 | [Deploy to ECS](plugins/ecs-deploy/README.md)| Deploy docker image to ECS| `ecs` `deploy` `containers` `aws`                         |
 | [Deploy Kompose](plugins/kompose/README.md)| Deploy Docker Compose to Kubernetes cluster with Kubernetes [Kompose](http://kompose.io) | `docker` `docker-compose` `kompose` `deploy` `kubernetes` |
@@ -18,7 +18,6 @@ See each plugin readme for more info and usage instructions.
 | [Interact with Jira](https://github.com/codefresh-io/plugins/tree/master/stable/jira/README.md)|@antweiss | Interact with Jira from codefresh pipelines| `jira` `workflow`|
 | [release to npm](plugins/release-to-NPM/README.md) | Release npm modules from a pipeline | `npm` |
 | [Twistlock](plugins/twistlock-scan) | Security scanning of docker images using Twistlock | `security` |
-| [Helm](plugins/helm/README.md) | Deploy Helm charts | `kubernetes` `helm`|
 | [Clair](plugins/clair/README.md) |  Security scanning of Docker images using Clair | `security` |
 | [Import Docker Images](plugins/import-docker-images/README.md) | Import Docker images metadata into Codefresh| `docker` `codefresh`|
 | [Deploy Kompose](plugins/kompose/README.md)| Deploy Docker Compose to Kubernetes cluster with Kubernetes Kompose | `docker` `docker-compose` `kompose` `deploy` `kubernetes` |
