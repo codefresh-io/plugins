@@ -50,6 +50,8 @@ volumes:
   - name: The volume name
     required: true | false (default "false")
     description: A short description for attached volume
+context:
+  - kind: Codefresh context kind to inject automatically to the plugin
 ```
 
 
