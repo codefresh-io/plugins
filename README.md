@@ -5,8 +5,8 @@ See each plugin readme for more info and usage instructions.
 
 ## Plugins
 
-| Plugin| Author| Description| Tags|
-| --- | --- | --- | --- |
+| Plugin|  Description| Tags|
+| --- | --- |  --- |
 | [Helm](plugins/helm/README.md) | Deploy Helm charts | `kubernetes` `helm`|
 | [Codefresh Cli](plugins/codefresh-cli/README.md) | Operate on Codefresh resources | `cli` `codefresh`|
 | [Slack](plugins/slack/README.md)| Send message to slack| `slack` `notify`|
@@ -15,7 +15,7 @@ See each plugin readme for more info and usage instructions.
 | [GitHub PR](plugins/github-pr/README.MD)| Creates pull request to GitHub | `github`  |
 | [Run Jenkins Jobs](plugins/run-jenkins-job/README.md)| Run jenkins job from codefresh pipeline| `jenkins` `job`|
 | [Deploy to DCOS](plugins/dcos-app-deploy/README.md) | Deploy application image to DC/OS cluster | `dcos` `deploy` `containers` |
-| [Interact with Jira](plugins/jira/README.md)|@antweiss | Interact with Jira from codefresh pipelines| `jira` `workflow`|
+| [Interact with Jira](plugins/jira/README.md) | Interact with Jira from codefresh pipelines| `jira` `workflow`|
 | [release to npm](plugins/release-to-NPM/README.md) | Release npm modules from a pipeline | `npm` |
 | [Twistlock](plugins/twistlock-scan) | Security scanning of docker images using Twistlock | `security` |
 | [Clair](plugins/clair/README.md) |  Security scanning of Docker images using Clair | `security` |
