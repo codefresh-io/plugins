@@ -20,4 +20,4 @@ See each plugin readme for more info and usage instructions.
 | [Twistlock](plugins/twistlock-scan) | Security scanning of docker images using Twistlock | `security` |
 | [Clair](plugins/clair/README.md) |  Security scanning of Docker images using Clair | `security` |
 | [Import Docker Images](plugins/import-docker-images/README.md) | Import Docker images metadata into Codefresh| `docker` `codefresh`|
-| [Deploy Kompose](plugins/kompose/README.md)| Deploy Docker Compose to Kubernetes cluster with Kubernetes Kompose | `docker` `docker-compose` `kompose` `deploy` `kubernetes` |
+
