@@ -81,7 +81,7 @@ TL_VULNERABILITY_THRESHOLD=critical
 
 For this example, we're being permissive (critical for both thresholds). Of course those values can be set to any of the other options.
 
-#### Pipeline YAML (Codefresh.yml)
+#### Pipeline YAML (codefresh.yml)
 
 ```yaml
 version: '1.0'
