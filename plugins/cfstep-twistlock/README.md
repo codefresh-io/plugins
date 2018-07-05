@@ -94,7 +94,7 @@ steps:
     tag: '${{CF_SHORT_REVISION}}'
     dockerfile: Dockerfile
 
-  PushingToTEMPDockerRegistry:
+  PushingToTempDockerRegistry:
     title: Pushing to Temporal Docker Registry (for unscanned images -> to be scanned)
     type: push
     candidate: '${{BuildingDockerImage}}'
@@ -102,7 +102,7 @@ steps:
     tags: 
       - '${{CF_SHORT_REVISION}}'
       
-  TL_Scan:
+  TLScan:
     title: Twistlock Scan
     image: codefresh/cfstep-twistlock
     environment:
