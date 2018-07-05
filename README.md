@@ -17,7 +17,6 @@ See each plugin readme for more info and usage instructions.
 | [Deploy to DCOS](plugins/dcos-app-deploy/README.md) | Deploy application image to DC/OS cluster | `dcos` `deploy` `containers` |
 | [Interact with Jira](plugins/jira/README.md) | Interact with Jira from codefresh pipelines| `jira` `workflow`|
 | [release to npm](plugins/release-to-NPM/README.md) | Release npm modules from a pipeline | `npm` |
-| [Twistlock](plugins/twistlock-scan) | Security scanning of docker images using Twistlock | `security` |
+| [Twistlock](plugins/cfstep-twistlock) | Security scanning of docker images using Twistlock | `security` |
 | [Clair](plugins/clair/README.md) |  Security scanning of Docker images using Clair | `security` |
 | [Import Docker Images](plugins/import-docker-images/README.md) | Import Docker images metadata into Codefresh| `docker` `codefresh`|
-
