@@ -43,7 +43,7 @@ Summary: in this example, we're going to scan an image built by Codefresh.
 
 The image's Dockerfile is defined in this sample repo: https://github.com/francisco-codefresh/twistlock_demo
 
-For scanning purposes, the image will be pushed to a temporary registry, which can be seen as a "Registry of unscanned images". Once there, we can initiate the scan in Twistlock console.
+For scanning purposes, the image will be pushed to a temporary registry, which can be considered as a "Registry of unscanned images". Once there, we can initiate the scan in Twistlock console.
 
 In order for this to work, the registry to scan must be previously added to TwistlocK Console.
 
