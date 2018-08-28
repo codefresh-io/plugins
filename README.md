@@ -20,3 +20,4 @@ See each plugin readme for more info and usage instructions.
 | [Twistlock](plugins/cfstep-twistlock) | Security scanning of docker images using Twistlock | `security` |
 | [Clair](plugins/clair/README.md) |  Security scanning of Docker images using Clair | `security` |
 | [Import Docker Images](plugins/import-docker-images/README.md) | Import Docker images metadata into Codefresh| `docker` `codefresh`|
+| [Google KMS](plugins/google-kms/README.md) | Encryption/Decryption with Google KMS| `KMS` `codefresh`|
