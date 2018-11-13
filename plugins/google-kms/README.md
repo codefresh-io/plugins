@@ -1,4 +1,4 @@
-odefresh Google KMS plugin
+Сodefresh Google KMS plugin
 
 This plugin facilitates work with Google Key Management Service for such operations like *encrypting* and *decrypting*
 
