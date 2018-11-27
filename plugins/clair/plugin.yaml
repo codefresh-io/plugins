@@ -3,6 +3,7 @@ version: 1.0.0
 description: Scan an image with Clair
 keywords:
   - clair
+  - security
 home: https://github.com/codefresh-io/pugins/tree/master/incubator/clair
 sources:
   - https://github.com/optiopay/klar
