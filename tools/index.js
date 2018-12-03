@@ -24,8 +24,7 @@ const getContent = source =>
 
 const validatePlugin = (p)=>{return p;}
 const catalog = "dynamic-catalog.md";
-
-  let plugins = kefir.sequentially(0,  getDirectories(pluginsDir)).map(validatePlugin)
+let plugins = kefir.sequentially(0,  getDirectories(pluginsDir)).map(validatePlugin)
  
   
 const createMD = (template , data)=>{
@@ -57,7 +56,7 @@ const createMD = (template , data)=>{
         return plugins;
     }, []).spy().last()
      
-    let template = kefir.fromNodeCallback(_.partial(fs.readFile, template))
+    let template = kefir.fromNodeCallback(_.partial(fs.readFile, "template.md"))
     .map((f)=>new Buffer(f).toString()).spy();
    
 
