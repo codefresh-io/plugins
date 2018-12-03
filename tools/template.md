@@ -1,6 +1,6 @@
 # **Catalog**
-
-**{{pluginName}}**
+** {{date}}**
+ 
 
 | Plugin Name        | Description           | source | Tags  |
 | ------------- |:-------------:| -----:|----:|

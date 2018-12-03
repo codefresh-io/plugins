@@ -30,6 +30,7 @@ const catalog = "dynamic-catalog.md";
   
 const createMD = (template , data)=>{
     Mustache.parse(template);   // optional, speeds up future uses
+    data.date = new Date();
     var rendered = Mustache.render(template, data);
     return rendered;
 }
