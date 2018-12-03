@@ -8,10 +8,12 @@ const { basename, join } = require('path')
 const kefir = require('kefir');
 const _ =  require('lodash');
 const YAML = require('yamljs');
-const Mustache = require('mustache')
-const fs = require('fs')
+const Mustache = require('mustache');
+const fs = require('fs');
+const debug = require('debug');
 
 const pluginsDir = process.env.PLUGINS  || "../plugins"
+debug(`plugins path is ${pluginsDir}`);
 const isDirectory = source => lstatSync(source).isDirectory()
 const getDirectories = source =>
   readdirSync(source)
@@ -54,7 +56,7 @@ const createMD = (template , data)=>{
         return plugins;
     }, []).spy().last()
      
-    let template = kefir.fromNodeCallback(_.partial(fs.readFile, "template.md"))
+    let template = kefir.fromNodeCallback(_.partial(fs.readFile, template))
     .map((f)=>new Buffer(f).toString()).spy();
    
 
