@@ -1,5 +1,5 @@
 # **Catalog**
-Created at ** Sun Dec 09 2018 02:51:54 GMT+0200 (IST)**
+Created at ** Sun Dec 09 2018 03:00:59 GMT+0200 (IST)**
 
 
 | Plugin Name        | Description           | source | Tags  |
@@ -18,4 +18,5 @@ Created at ** Sun Dec 09 2018 02:51:54 GMT+0200 (IST)**
  |  |   |  | |
  | codefresh&#x2F;run-jenkins-jobs |  Run jenkins job from codefresh pipeline | https:&#x2F;&#x2F;github.com&#x2F;codefresh-io&#x2F;cf-run-jenkins-jobs |  **`docker`**  **`jenkins`** |
  | codefresh&#x2F;slack-message-sender |  Send message to slack channel | https:&#x2F;&#x2F;github.com&#x2F;codefresh-io&#x2F;slack-message-sender |  **`slack`** |
+ | codefresh&#x2F;github-pr-plugin |  Creates GitHub pull request | https:&#x2F;&#x2F;github.com&#x2F;codefresh-io&#x2F;github-pr-plugin |  **`testplugin`** |
 
