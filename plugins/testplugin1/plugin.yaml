@@ -1,7 +1,7 @@
 image: codefresh/github-pr-plugin
 tag: master
 version: 0.1.0
-description: test plugin1
+description: test plugin1!
 keywords:
   - testplugin1
   
