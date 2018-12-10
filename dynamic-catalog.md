@@ -1,5 +1,5 @@
 # **Catalog**
-Created at ** Sun Dec 09 2018 14:56:15 GMT+0000 (Coordinated Universal Time)**
+Created at ** Mon Dec 10 2018 03:53:05 GMT+0000 (Coordinated Universal Time)**
 
 
 | Plugin Name   | Image     | Description           | source | Tags  |
@@ -20,4 +20,5 @@ Created at ** Sun Dec 09 2018 14:56:15 GMT+0000 (Coordinated Universal Time)**
  | slack | codefresh&#x2F;slack-message-sender | Send message to slack channel | https:&#x2F;&#x2F;github.com&#x2F;codefresh-io&#x2F;slack-message-sender |  **`slack`** |
  | testplugin | codefresh&#x2F;github-pr-plugin | Creates GitHub pull request | https:&#x2F;&#x2F;github.com&#x2F;codefresh-io&#x2F;github-pr-plugin |  **`testplugin`** |
  | testplugin1 | codefresh&#x2F;github-pr-plugin | test plugin1! | https:&#x2F;&#x2F;github.com&#x2F;codefresh-io&#x2F;github-pr-plugin |  **`testplugin1`** |
+ | versioner | docker.io&#x2F;codefresh&#x2F;versioner | Execute Twistlock image scan as build step | https:&#x2F;&#x2F;github.com&#x2F;codefresh-io&#x2F;cf-plugin-versioner.git |  **`versioner 1.0`** |
 
