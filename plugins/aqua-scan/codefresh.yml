@@ -1,0 +1,41 @@
+version: '1.0'
+
+steps:
+
+  buildimage:
+    type: build
+    description: image build step
+    dockerfile: Dockerfile
+    image_name: sctechdev/docker-security-scanner
+    tag: latest-cf-build-candidate
+
+  push_image:
+    type: push
+    candidate: ${{buildimage}}
+    tag: latest
+    when:
+      branch:
+        only:
+          - master
+  push_image1:
+    type: push
+    candidate: ${{buildimage}}
+    tag: ${{CF_BRANCH_TAG_NORMALIZED}}-${{CF_SHORT_REVISION}}
+
+  push_image_nexus_latest:
+    title: Push to Nexus Repo (latest)
+    type: push
+    candidate: ${{buildimage}}
+    tag: latest
+    registry: sonatype-docker-internal
+    when:
+      branch:
+        only:
+          - master
+
+  push_image_neuxs_gitbranch_gitsha:
+    title: Push to Nexus Repo (gitbranch + gitsha)
+    type: push
+    candidate: ${{buildimage}}
+    tag: ${{CF_BRANCH_TAG_NORMALIZED}}-${{CF_SHORT_REVISION}}
+    registry: sonatype-docker-internal
