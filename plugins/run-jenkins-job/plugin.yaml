@@ -1,3 +1,4 @@
+id: edf10d78-352b-41eb-ba17-66c7b67ec5f6
 image: codefresh/run-jenkins-jobs
 tag: master
 version: 0.1.0

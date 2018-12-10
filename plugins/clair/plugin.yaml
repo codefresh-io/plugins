@@ -1,3 +1,4 @@
+id: 032d5c20-cbff-47d1-8109-712a7fde15bd
 image: codefresh/klar:master
 version: 1.0.0
 description: Scan an image with Clair

@@ -1,3 +1,4 @@
+id: fb5c83f6-b269-4cf8-8864-87944c3ec3d5
 image: docker.io/sctechdev/docker-security-scanner
 tag: master-c81e6d4
 version: 2.2
@@ -7,7 +8,7 @@ keywords:
 home: https://hub.docker.com/r/sctechdev/docker-security-scanner/
 sources:
   - https://github.com/SC-TechDev/docker-security-scanner
-maintainers: 
+maintainers:
   - name: Dustin Van Buskirk
     email: dev@vanbuskirk.me
   - name: Varun Tagore

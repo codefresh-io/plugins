@@ -1,3 +1,4 @@
+id: ab7819eb-d1a5-4b83-a9a9-1ae65c8fa8d8
 image: codefresh/cfstep-helm
 version: 1.0.0
 description: Release a Helm chart (update or install)

@@ -1,3 +1,4 @@
+id: cd063018-68b3-43e8-b374-fc2ab8fd2c36
 image: codefresh/github-pr-plugin
 tag: master
 version: 0.1.0
