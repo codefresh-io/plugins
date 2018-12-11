@@ -1,0 +1,38 @@
+image: codefresh/cf-azure-builder
+tag: latest
+version: 0.1.0
+description: Run jenkins job from codefresh pipeline
+keywords:
+  - docker
+  - azure
+home: https://github.com/codefresh-io/azure-build-plugin
+sources:
+  - https://github.com/codefresh-io/azure-build-plugin
+maintainers: # (optional)
+  - name: Amir Gabay
+    email: amir.gabay@codefresh.io
+icon: https://cdn-images-1.medium.com/max/1600/1*c9mvlJQ0o-zQbHM3SL8zkg.png
+  envs:
+    - name: IMAGE
+      type: required
+      description: image name
+    - name: TAG
+      type: required
+      description: tag name
+    - name: ACR_NAME
+      type: required
+      description: acr registry name
+    - name: APP_ID
+      type: required
+      description: azure service principal application id
+    - name: PASSWORD
+      type: required
+      description: azure service principal password
+    - name: TENANT
+      type: required
+      description: azure ad tenant id
+    - name: DOCKERFILE_PATH
+      type: required
+      description: dockerfile path (default - working_dir/Dockerfile)
+
+
