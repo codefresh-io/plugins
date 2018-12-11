@@ -21,3 +21,4 @@ See each plugin readme for more info and usage instructions.
 | [Clair](plugins/clair/README.md) |  Security scanning of Docker images using Clair | `security` |
 | [Import Docker Images](plugins/import-docker-images/README.md) | Import Docker images metadata into Codefresh| `docker` `codefresh`|
 | [Google KMS](plugins/google-kms/README.md) | Encryption/Decryption with Google KMS| `KMS` `codefresh`|
+| [Google GKE](plugins/gke/README.md) | GKE Clusters | `GKE` `codefresh`|
