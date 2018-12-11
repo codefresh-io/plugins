@@ -19,6 +19,10 @@ DESCRIPTION:
     PASSWORD   - Azure service principal password
     TENANT     - Azure ad tenant id
     DOCKERFILE_PATH - Dockerfile path (default - working_dir/Dockerfile)
+    
+## Output Variables
+
+    AZURE_IMAGE     - Azure image full name in ACR that can be used in later step
 
 ## Usage Example:
 
