@@ -1,7 +1,7 @@
 image: codefresh/cf-azure-builder
 tag: latest
 version: 0.1.0
-description: Run jenkins job from codefresh pipeline
+description: Docker build in Azure ACR
 keywords:
   - docker
   - azure
