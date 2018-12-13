@@ -48,6 +48,27 @@ steps:
 
 ```
 
+Default template mode - send information about build
+
+```yaml
+---
+version: '1.0'
+
+steps:
+
+  ...
+
+ SendToSlack:
+     title: Sending message to slack
+     image: codefresh/slacknotifier
+     environment:
+     - SLACK_HOOK_URL=${{SLACK_HOOK_URL}}
+     - MODE=default-template
+  ...
+
+```
+
+
 
 ## Environment Variables
 
