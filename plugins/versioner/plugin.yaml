@@ -2,6 +2,7 @@ image: docker.io/codefresh/versioner
 tag: latest
 version: 1.0
 description: semver versions builder 
+keywords:
   - versioner 1.0 
 #home: https://hub.docker.com/r/sctechdev/docker-security-scanner/
 sources:
