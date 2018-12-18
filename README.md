@@ -22,3 +22,4 @@ See each plugin readme for more info and usage instructions.
 | [Import Docker Images](plugins/import-docker-images/README.md) | Import Docker images metadata into Codefresh| `docker` `codefresh`|
 | [Google KMS](plugins/google-kms/README.md) | Encryption/Decryption with Google KMS| `KMS` `codefresh`|
 | [Github Release](plugins/github-release/README.md) | Managing GitHub releases | `github` `release`|
+| [Google GKE](plugins/gke/README.md) | GKE Clusters | `GKE` `codefresh`|
