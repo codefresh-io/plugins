@@ -1,17 +1,16 @@
 image: docker.io/codefresh/versioner
 tag: latest
 version: 1.0
-description: Execute Twistlock image scan as build step
-keywords:
+description: semver versions builder 
   - versioner 1.0 
-home: https://hub.docker.com/r/sctechdev/docker-security-scanner/
+#home: https://hub.docker.com/r/sctechdev/docker-security-scanner/
 sources:
   - https://github.com/codefresh-io/cf-plugin-versioner.git
 maintainers: 
-  - name: Dustin Van Buskirk
-    email: dev@vanbuskirk.me
-  - name: Varun Tagore
-    email: rondevops@gmail.com
+  - name: Oleg Verhovsky
+    email: oleg@codefresh.io
+    
+   
 #icon: A URL to an SVG or PNG image to be used as an icon (optional)
 envs:
   
