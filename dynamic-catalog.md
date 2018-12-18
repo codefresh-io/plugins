@@ -1,9 +1,9 @@
 # **Catalog**
-Created at ** Mon Dec 10 2018 06:12:32 GMT+0200 (IST)**
+Created at ** Tue Dec 18 2018 23:28:34 GMT+0000 (Coordinated Universal Time)**
 
 
 | Plugin Name   | Image     | Description           | source | Tags  |
-| ------------- |:-------------:| :----: |:-----:|:----:|
+| ------------- |-------------| ---- |-----|----|
  | clair | codefresh&#x2F;klar:master | Scan an image with Clair | https:&#x2F;&#x2F;github.com&#x2F;optiopay&#x2F;klar |  **`clair`**  **`security`** |
  | codefresh-cli | codefresh&#x2F;cli | Operate on Codefresh resources | https:&#x2F;&#x2F;github.com&#x2F;codefresh-io&#x2F;codefresh |  **`cli`** |
  | dcos-app-deploy | codefresh&#x2F;cf-deploy-dcos | Deploy an application on dcos cluster | https:&#x2F;&#x2F;github.com&#x2F;codefresh-io&#x2F;cf-deploy-dcos |  **`dcos`**  **`deploy`**  **`deployment`** |
