@@ -1,0 +1,33 @@
+version: '1.0'
+steps:
+  MyDockerImage:
+    title: Building Docker Image
+    type: build
+    image_name: ${{QA_IMAGE}}
+    working_directory: ./
+    tag: latest
+    dockerfile: Dockerfile
+    metadata:
+      set:
+      	- QA: Pending Anchore scan..
+  ScanMyImage:
+    title: Scanning Docker Image
+    image: anchore/engine-cli:latest
+    commands:
+      - echo "Scanning image with Anchore"
+      - anchore-cli image add ${{QA_IMAGE}}
+      - echo "Waiting for analysis to complete"
+      - anchore-cli image wait ${{QA_IMAGE}}
+      - echo "Analysis complete"
+      - if [ "${{ANCHORE_FAIL_ON_POLICY}}" == "true" ] ; then anchore-cli evaluate check ${{QA_IMAGE}}; fi
+  PushImage:
+    title: Pushing Docker Image
+    description: Pushing Docker Image to Dockerhub...
+    type: push
+    candidate: '${{MyDockerImage}}'
+    image_name: jvalance/node_critical_fail
+    tag: latest
+    registry: docker.io
+    credentials:
+      username: '${{dockerhubUsername}}'
+      password: '${{dockerhubPassword}}'
