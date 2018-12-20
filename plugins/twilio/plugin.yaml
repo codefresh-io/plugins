@@ -28,3 +28,4 @@ envs:
     description: Type of your message [build - send info about your build via Codefresh, default - Send message with statc text]
   - name: TWILIO_MESSAGE
     description: Required in default mode, text for message
+
