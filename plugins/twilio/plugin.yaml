@@ -1,0 +1,30 @@
+image: codefresh/twilioplugin
+version: latest
+description: Send SMS message via Twilio
+keywords:
+  - sms
+  - twilio
+home: https://github.com/codefresh-io/twillio-plugin
+sources:
+  - https://github.com/codefresh-io/twillio-plugin
+maintainers:
+  - name: Pavel Kostohrys
+    email: pavel@codefresh.io
+icon: https://cdn.iconscout.com/icon/free/png-256/twilio-1-285957.png
+envs:
+  - name: TWILIO_SID
+    type: required
+    description: Your account SID from Twilio console
+  - name: TWILIO_TOKEN
+    type: required
+    description: Your API Auth Token from Twilio console
+  - name: TWILIO_PHONE_FROM
+    type: required
+    description: Phone number from which messages will be sent
+  - name: TWILIO_PHONE_TO
+    type: required
+    description: Phone number to which messages will be sent
+  - name: TWILIO_TYPE
+    description: Type of your message [build - send info about your build via Codefresh, default - Send message with statc text]
+  - name: TWILIO_MESSAGE
+    description: Required in default mode, text for message
