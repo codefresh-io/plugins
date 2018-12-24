@@ -1,5 +1,5 @@
 # **Catalog**
-Created at ** Thu Dec 20 2018 10:33:16 GMT+0000 (Coordinated Universal Time)**
+Created at ** Mon Dec 24 2018 11:31:14 GMT+0000 (Coordinated Universal Time)**
 
 
 | Plugin Name   | Image     | Description           | source | Tags  |
@@ -19,6 +19,7 @@ Created at ** Thu Dec 20 2018 10:33:16 GMT+0000 (Coordinated Universal Time)**
  | kompose | codefresh&#x2F;plugin-helm | Release a Docker Compose to Kubernetes | https:&#x2F;&#x2F;github.com&#x2F;codefresh-io&#x2F;cf-kompose-plugin |  **`docker-compose`**  **`docker`**  **`kompose`**  **`kubernetes`** |
  | release-to-NPM |  |  |  | |
  | run-jenkins-job | codefresh&#x2F;run-jenkins-jobs | Run jenkins job from codefresh pipeline | https:&#x2F;&#x2F;github.com&#x2F;codefresh-io&#x2F;cf-run-jenkins-jobs |  **`docker`**  **`jenkins`** |
+ | sendgrid | codefresh&#x2F;sendgridplugin | Send e-mail via Sendgrid | https:&#x2F;&#x2F;github.com&#x2F;codefresh-io&#x2F;sendgridplugin |  **`mail`**  **`sendgrid`** |
  | slack | codefresh&#x2F;slack-message-sender | Send message to slack channel | https:&#x2F;&#x2F;github.com&#x2F;codefresh-io&#x2F;slack-message-sender |  **`slack`** |
  | slack-notifier | codefresh&#x2F;slacknotifier | Send message to slack channel | https:&#x2F;&#x2F;github.com&#x2F;codefresh-io&#x2F;slack-notifier |  **`slack`** |
  | testplugin | codefresh&#x2F;github-pr-plugin | Creates GitHub pull request | https:&#x2F;&#x2F;github.com&#x2F;codefresh-io&#x2F;github-pr-plugin |  **`testplugin`** |
