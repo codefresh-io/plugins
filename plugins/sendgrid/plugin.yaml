@@ -1,0 +1,33 @@
+image: codefresh/sendgridplugin
+version: latest
+description: Send e-mail via Sendgrid
+keywords:
+  - mail
+  - sendgrid
+home: https://github.com/codefresh-io/sendgridplugin
+sources:
+  - https://github.com/codefresh-io/sendgridplugin
+maintainers:
+  - name: Pavel Kostohrys
+    email: pavel@codefresh.io
+icon: https://images.ctfassets.net/bx16dovk9m7p/XNo9W4lwAMsai8KOikAae/35f6df5bf800dd4993c2d98376448f0d/a37a5b5ab495b5531dd406d40baa8a5c.png
+envs:
+  - name: SENDGRID_APIKEY
+    type: required
+    description: API key from SendGrid
+  - name: SENDGRID_MAIL
+    type: required
+    description: mail where the letter will be sent, you can use comma divider to send on multiple mails (ex.: mail1@example.com, mail2@exmaple.com)
+  - name: SENDGRID_FROM
+    type: required
+    description: from header of mail
+  - name: SENDGRID_SUBJECT
+    type: required
+    description: subject header of mail
+  - name: SENDGRID_TYPE
+    type: required
+    description: type of mail [build, message, custom]
+  - name: SENDGRID_MESSAGE
+    description: Text of message for type message
+  - name: SENDGRID_TEMPLATE
+    description: Template of message for type message
