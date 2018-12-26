@@ -1,5 +1,6 @@
 # Update git submodules
 Plugin to update git submodules of an already cloned repo.
+
 Dockerhub repo: https://hub.docker.com/r/codefresh/cfstep-gitsubmodules/tags
 
 ## Options
