@@ -11,7 +11,8 @@ Dockerhub repo: https://hub.docker.com/r/codefresh/cfstep-gitsubmodules/tags
 
 ## Usage Example:
 
-This  example update submodule of a cloned repo.
+This  example updates submodule of a cloned repo.
+
 The step assumes that the working directory is the cloned repo (which is the default working directory for any free style step)
 
 ```yaml
