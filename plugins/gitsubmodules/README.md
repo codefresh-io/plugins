@@ -8,6 +8,7 @@ Dockerhub repo: https://hub.docker.com/r/codefresh/cfstep-gitsubmodules/tags
 |--|--|--|--|--|
 | GITHUB_TOKEN | null | string | Yes | GitHub Personal Token |
 | CF_SUBMODULE_SYNC | null | boolean | No | If set to 'true', the step will perform 'git submodule sync' command |
+| CF_SUBMODULE_UPDATE_RECURSIVE | null | boolean | No | If set to 'true', the step will perform 'git submodule update --init' command with '--recursive' option |
 
 ## Usage Example:
 
@@ -23,4 +24,5 @@ steps:
     environment:
       - GITHUB_TOKEN=<github_token>
       - CF_SUBMODULE_SYNC=<boolean to determine if modules should be synced>
+      - CF_SUBMODULE_UPDATE_RECURSIVE=<boolean to determine if modules should be recursively updated>
 ```

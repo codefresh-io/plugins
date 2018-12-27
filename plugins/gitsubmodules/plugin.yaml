@@ -19,3 +19,6 @@ icon: https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png
     - name: CF_SUBMODULE_SYNC
       type: optional
       description: if var is set to 'true', the step will perform 'git submodule sync' command
+    - name: CF_SUBMODULE_UPDATE_RECURSIVE
+      type: optional
+      description: if set to 'true', the step will perform 'git submodule update --init' command with '--recursive' option
