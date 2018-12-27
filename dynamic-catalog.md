@@ -1,5 +1,5 @@
 # **Catalog**
-Created at ** Wed Dec 26 2018 12:59:29 GMT+0000 (Coordinated Universal Time)**
+Created at ** Thu Dec 27 2018 22:12:19 GMT+0000 (Coordinated Universal Time)**
 
 
 | Plugin Name   | Image     | Description           | source | Tags  |
@@ -11,6 +11,7 @@ Created at ** Wed Dec 26 2018 12:59:29 GMT+0000 (Coordinated Universal Time)**
  | docker-service | codefresh&#x2F;docker-service | Codefresh docker-service plugin | https:&#x2F;&#x2F;github.com&#x2F;codefresh-io&#x2F;docker-service |  **`docker`**  **`docker-machine`**  **`docker-compose`** |
  | ecs-deploy | codefresh&#x2F;ecs | Release a Helm chart (update or install) | https:&#x2F;&#x2F;github.com&#x2F;codefresh-io&#x2F;cf-deploy-ecs.git |  **`ecs`**  **`deploy`**  **`containers`** |
  | github-pr | codefresh&#x2F;github-pr-plugin | Operates on GitHub pull requests | https:&#x2F;&#x2F;github.com&#x2F;codefresh-io&#x2F;github-pr-plugin |  **`docker`**  **`github`**  **`pull-request`** |
+ | gitsubmodules | codefresh&#x2F;cfstep-gitsubmodules | Update git submodules | https:&#x2F;&#x2F;github.com&#x2F;codefresh-io&#x2F;cfstep-gitsubmodules |  **`git`**  **`submodules`** |
  | gke | codefresh&#x2F;plugin-gke | Codefresh gke plugin | https:&#x2F;&#x2F;github.com&#x2F;codefresh-io&#x2F;plugin-gke |  **`kubernetes`**  **`gke`**  **`gcloud`** |
  | helm | codefresh&#x2F;cfstep-helm | Release a Helm chart (update or install) | https:&#x2F;&#x2F;github.com&#x2F;codefresh-contrib&#x2F;cfplugin-step |  **`helm`**  **`kubernetes`** |
  | helm-legacy | codefresh&#x2F;plugin-helm | Release a Helm chart (update or install). There is a new Helm plugin with added capabilities, we are keeping this plugin as is for backward-compatibility. The new plugin is at &#x2F;incubator&#x2F;helm (https:&#x2F;&#x2F;github.com&#x2F;codefresh-io&#x2F;plugins&#x2F;tree&#x2F;master&#x2F;incubator&#x2F;helm) | https:&#x2F;&#x2F;github.com&#x2F;codefresh-io&#x2F;cf-plugin-helm |  **`helm`**  **`kubernetes`** |
