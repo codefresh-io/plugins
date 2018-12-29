@@ -16,6 +16,7 @@ See each plugin readme for more info and usage instructions.
 | [Run Jenkins Jobs](plugins/run-jenkins-job/README.md)| Run jenkins job from codefresh pipeline| `jenkins` `job`|
 | [Deploy to DCOS](plugins/dcos-app-deploy/README.md) | Deploy application image to DC/OS cluster | `dcos` `deploy` `containers` |
 | [Interact with Jira](plugins/jira/README.md) | Interact with Jira from codefresh pipelines| `jira` `workflow`|
+| [Makisu](plugins/makisu/README.md) | Building images using the Makisu tool | `makisu` `uber`|
 | [release to npm](plugins/release-to-NPM/README.md) | Release npm modules from a pipeline | `npm` |
 | [Twistlock](plugins/cfstep-twistlock) | Security scanning of docker images using Twistlock | `security` |
 | [Clair](plugins/clair/README.md) |  Security scanning of Docker images using Clair | `security` |
