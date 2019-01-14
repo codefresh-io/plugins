@@ -6,7 +6,7 @@ then they can be packaged into versioned archives to be deployed.
 This document explains the plugin format, and provides basic guidance for
 building plugins.
 
-## The Plugin File Structure
+## Plugin File Structure
 
 A plugin is organized as a collection of files inside of a directory. The
 directory name is the name of the plugin (without versioning information). Thus,
@@ -17,7 +17,7 @@ Inside of this directory, Codefresh will expect a structure that matches this:
 ```
 kube-deploy/
   plugin.yaml         # A YAML file containing information about the plugin
-  LICENSE             # OPTIONAL: A plain text file containing the license for the chart
+  LICENSE             # OPTIONAL: A plain text file containing the license for the plugin
   README.md           # OPTIONAL: A human-readable README file
   NOTES.md            # OPTIONAL: A plain text file containing short usage notes
 ```
@@ -95,4 +95,4 @@ cannot be overridden.
 ### Predefined Volumes and Files
 
 - `/codefresh/volume` - same volume mounted to all steps running in Codefresh pipeline
-- `/codefresh/volume/env_vars_to_export` - a placeholder file to filled with **exported** environment variables; any exported variable can be used in subsequent pipeline steps
+- `/codefresh/volume/env_vars_to_export` - a placeholder file to be filled with **exported** environment variables; any exported variable can be used in subsequent pipeline steps

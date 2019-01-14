@@ -9,8 +9,9 @@ This repository is used by Plugin developers for maintaining the official plugin
 
 ### How to Contribute a Plugin
 
-1. Fork this repository, develop and test your Plugin
-2. Choose the correct folder for your plugin based on the information in the [Repository Structure](README.md#repository-structure) section
+1. Develop and test your plugin
+2. Fork this repository
+2. Choose the correct folder for your plugin based on the information in the [Repository Structure](docs/plugin.md#plugin-file-structure) section
 3. Ensure your Plugin follows the [technical](#technical-requirements) and [documentation](#documentation-requirements) guidelines, described below
 4. Update [Plugin Catalog](CATALOG.md)
 5. Submit a pull request
