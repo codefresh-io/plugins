@@ -24,3 +24,4 @@ See each plugin readme for more info and usage instructions.
 | [Google KMS](plugins/google-kms/README.md) | Encryption/Decryption with Google KMS| `KMS` `codefresh`|
 | [Github Release](plugins/github-release/README.md) | Managing GitHub releases | `github` `release`|
 | [Google GKE](plugins/gke/README.md) | GKE Clusters | `GKE` `codefresh`|
+| [Vault](plugins/vault/README.md) | Export Vault Key/Value pairs | `Vault` `codefresh`|
