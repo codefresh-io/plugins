@@ -18,7 +18,7 @@ steps:
     title: Sending message to slack
     image: codefresh/slacknotifier
     environment:
-    - SLACK_WEBHOOK_URL=${{SLACK_HOOK_URL}}
+    - SLACK_HOOK_URL=${{SLACK_HOOK_URL}}
     - SLACK_TEXT=${{SLACK_TEXT}}
     - SLACK_ATTACHMENTS=${{SLACK_ATTACHMENTS}}
   ...
@@ -51,7 +51,7 @@ steps:
 
 ## Environment Variables
 
-- **required** `WEBHOOK_URL` - Url to the channel. Slack official [docs](https://api.slack.com/incoming-webhooks)
+- **required** `SLACK_HOOK_URL` - Url to the channel. Slack official [docs](https://api.slack.com/incoming-webhooks)
 - **required** `SLACK_TEXT` - The message that will be sent
 - `SLACK_ATTACHMENTS` - print verbose output
 - `MODE` - template | simple mode
