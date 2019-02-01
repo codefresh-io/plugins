@@ -1,0 +1,25 @@
+image: codefresh/telegramnotifier
+version: latest
+description: Send message to telegram channel
+keywords:
+  - telegram
+home: https://github.com/codefresh-io/telegram-notifier
+sources:
+  - https://github.com/codefresh-io/telegram-notifier
+maintainers: # (optional)
+  - name: Andrii Shaforostov
+    email: andrii@codefresh.io
+icon: https://upload.wikimedia.org/wikipedia/commons/5/5c/Telegram_Messenger.png
+envs:
+  - name: TELEGRAM_TOKEN
+    type: required
+    description: token of your bot
+  - name: TELEGRAM_TO
+    type: required
+    description: array of user ids who will receive a message separated by comma
+  - name: TELEGRAM_STATUS
+    description: send info about current build
+  - name: TELEGRAM_MESSAGE
+    description: text of message which will be sent to user
+  - name: TELEGRAM_IMAGES
+    description: array of image links for attaching to message
