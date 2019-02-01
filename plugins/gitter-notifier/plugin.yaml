@@ -1,0 +1,20 @@
+image: codefresh/gitternotifier
+version: latest
+description: Send message to gitter room
+keywords:
+  - gitter
+home: https://github.com/codefresh-io/gitter-notifier
+sources:
+  - https://github.com/codefresh-io/gitter-notifier
+maintainers: # (optional)
+  - name: Andrii Shaforostov
+    email: andrii@codefresh.io
+icon: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Font_Awesome_5_brands_gitter.svg/109px-Font_Awesome_5_brands_gitter.svg.png
+envs:
+  - name: GITTER_WEBHOOK
+    type: required
+    description: gitter webhook
+  - name: GITTER_STATUS
+    description: send info about current build
+  - name: GITTER_MESSAGE
+    description: text of message which will be sent in room
