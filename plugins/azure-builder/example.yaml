@@ -1,0 +1,11 @@
+version: 1.0
+cf-az-build:   
+  image: codefresh/cf-azure-builder
+  environment:     
+    - IMAGE=<image name>
+    - TAG=<tag name>
+    - ACR_NAME=<acr registry name>
+    - APP_ID=<azure service principal application id>
+    - PASSWORD=<azure service principal password>
+    - TENANT=<azure ad tenant id>
+    - DOCKERFILE_PATH=<dockerfile path>
