@@ -34,9 +34,7 @@ ANCHORE_CLI_URL|Yes|The address of the Anchore server
 ANCHORE_CLI_USER|Yes|Anchore account name
 ANCHORE_CLI_PASS|Yes|Anchore account password
 ANCHORE_FAIL_ON_POLICY|No|Fail build if policy evaluation fails
-QA_IMAGE|No|Image built and scanned
-dockerhubUsername|No|Dockerhub account name
-dockerhubPassword|No|Dockerhub account password
+ANCHORE_CLI_IMAGE|Yes|Image built and scanned
 
 ### Codefresh.yml
 
@@ -47,31 +45,13 @@ steps:
     title: Building Docker Image
     type: build
     image_name: ${{QA_IMAGE}}
-    working_directory: ./
-    tag: latest
-    dockerfile: Dockerfile
-    metadata:
-      set:
-      	- QA: Pending Anchore scan before push to Dockerhub..
   ScanMyImage:
     title: Scanning Docker Image
     image: anchore/engine-cli:latest
-    commands:
-      - echo "Scanning image with Anchore"
-      - anchore-cli image add ${{QA_IMAGE}}
-      - echo "Waiting for analysis to complete"
-      - anchore-cli image wait ${{QA_IMAGE}}
-      - echo "Analysis complete"
-      - if [ "${{ANCHORE_FAIL_ON_POLICY}}" == "true" ] ; then anchore-cli evaluate check ${{QA_IMAGE}}; fi
-  PushImage:
-    title: Pushing Docker Image
-    description: Pushing Docker Image to Dockerhub...
-    type: push
-    candidate: '${{MyDockerImage}}'
-    image_name: jvalance/node_critical_fail
-    tag: latest
-    registry: docker.io
-    credentials:
-      username: '${{dockerhubUsername}}'
-      password: '${{dockerhubPassword}}'
+    env:
+      - ANCHORE_CLI_IMAGE=${{QA_IMAGE}}
+      - ANCHORE_CLI_USER=user
+      - ANCHORE_CLI_PASS=password
+      - ANCHORE_CLI_URL=http://anchore-engine::8228/v1
+      - ANCHORE_CLI_FAIL_ON_POLICY=true
 ```
