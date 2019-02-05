@@ -1,0 +1,33 @@
+version: '1.0'
+steps:
+  BuildingDockerImage:
+    title: Building Docker Image
+    type: build
+    image_name: codefresh/demochat # Replace with your Docker image name
+    working_directory: ./
+    dockerfile: Dockerfile
+    tag: '${{CF_BRANCH_TAG_NORMALIZED}}'
+  CheckClair:
+    image: codefresh/cfstep-paclair:3.1.0
+    environment:
+      - IMAGE=${{BuildingDockerImage}}
+      - TAG=${{CF_BRANCH_TAG_NORMALIZED}}
+    on_success: 
+      metadata: 
+        set:
+          - ${{BuildingDockerImage.imageId}}:
+            - SECURITY_SCAN: true
+    on_fail:
+      metadata:
+        set:
+          - ${{BuildingDockerImage.imageId}}:
+            - SECURITY_SCAN: false
+  ArchiveReport:
+    image: mesosphere/aws-cli
+    commands:
+      - aws s3 cp ./reports/${{BuildingDockerImage}}-${{CF_BRANCH_TAG_NORMALIZED}}.html s3://${{S3_BUCKETNAME}}/${{CF_BUILD_ID}}/${{BuildingDockerImage}}-${{CF_BRANCH_TAG_NORMALIZED}}.html
+    on_success:
+     metadata:
+        set:
+          - ${{BuildingDockerImage.imageId}}:
+              - CLAIR_REPORT: "https://s3.amazonaws.com/${{S3_BUCKETNAME}}/${{CF_BUILD_ID}}/${{BuildingDockerImage}}-${{CF_BRANCH_TAG_NORMALIZED}}.html"
