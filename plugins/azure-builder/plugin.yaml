@@ -14,29 +14,29 @@ maintainers:
 logo: https://cdn-images-1.medium.com/max/1600/1*c9mvlJQ0o-zQbHM3SL8zkg.png
 envs:
   - name: AUTH
-    type: optional
+    required: false
     description: Only if authentication mode is by service principal
   - name: USER
-    type: required
+    required: true
     description: azure user name (not need in service principal authentication mode)
   - name: IMAGE
-    type: required
+    required: true
     description: image name
   - name: TAG
-    type: required
+    required: true
     description: tag name
   - name: ACR_NAME
-    type: required
+    required: true
     description: acr registry name
   - name: APP_ID
-    type: required
+    required: true
     description: azure service principal application id (service principal authentication mode only)
   - name: PASSWORD
-    type: required
+    required: true
     description: azure service principal password or user password (based on authentication mode)
   - name: TENANT
-    type: required
+    required: true
     description: azure ad tenant id (service principal authentication mode only)
   - name: DOCKERFILE_PATH
-    type: required
+    required: true
     description: dockerfile path (default - working_dir/Dockerfile)
