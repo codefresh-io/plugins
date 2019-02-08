@@ -1,12 +1,10 @@
-image: codefresh/cli
-version: 0.1.0
+title: Codefresh CLI
+image: codefresh/cli:latest
 description: Operate on Codefresh resources
-keywords:
-  - cli
-home: https://github.com/codefresh-io/codefresh
-sources:
-  - https://github.com/codefresh-io/codefresh
-icon: http://cdn.osxdaily.com/wp-content/uploads/2014/08/terminal-icon-osx.png
+category:
+  - Featured
+source: https://github.com/codefresh-io/codefresh
+logo: http://cdn.osxdaily.com/wp-content/uploads/2014/08/terminal-icon-osx.png
 envs:
   - name: CFCONFIG
     description: Path for cfconfig file path
