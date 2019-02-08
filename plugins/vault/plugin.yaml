@@ -4,7 +4,7 @@ description: The plugin exports KV pairs from Hashicorp Vault to Codefresh pipel
 category:
   - Featured
 source: 'https://github.com/codefresh-io/cf-vault-plugin'
-logo: 'https://raw.githubusercontent.com/docker-library/docs/fab4b16599d1424cee888d47af850e0ba07e6a37/vault/logo.svg?sanitize=true'
+logo: 'https://raw.githubusercontent.com/codefresh-io/plugins/new-pipeline/plugins/vault/logo.jpg'
 maintainers:
   - name: Alexander Aladov
 envs:
