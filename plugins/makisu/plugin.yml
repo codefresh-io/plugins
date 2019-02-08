@@ -1,29 +1,21 @@
-image: codefresh/cfstep-makisu
-tag: latest
-version: 0.1.0
+title: Makisu plugin
+image: codefresh/cfstep-makisu:latest
 description: The plugin makes using Makisu build tool easier in a Codefresh pipeline
-keywords:
-  - makisu
-  - uber
-home: https://github.com/codefresh-contrib/cfstep-makisu
-sources:
-  - https://github.com/codefresh-contrib/cfstep-makisu
-maintainers: # (optional)
+category:
+  - Featured
+source: https://github.com/codefresh-contrib/cfstep-makisu
+logo: 'https://github.githubassets.com/images/icons/emoji/unicode/1f363.png'
+maintainer:
   - name: Alexander Cheshko
-    email: a.cheshko@codefresh.io
 envs:
   - name: IMAGE_NAME_TAG 
-    type: required
-    description: "Name and tag of the image to build"
+    description: "Name and tag of the image to build (required)"
   - name: REGISTRY_HOSTNAME
-    type: required
-    description: "Docker registry host name. Example: docker.io"
+    description: "Docker registry host name. Example: docker.io (required)"
   - name: R_USER
-    type: required
-    description: "User name to authenticate against the registry"
+    description: "User name to authenticate against the registry (required)"
   - name: R_PASSWORD
-    type: required
-    description: "Password to authenticate against the registry"
+    description: "Password to authenticate against the registry (required)"
   - name: DOCKERFILE
   - name: CUSTOM_FLAGS
     description: "Add custom flags to the makisu build command"
