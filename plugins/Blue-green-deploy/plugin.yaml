@@ -1,4 +1,4 @@
-title: 'Blue/Green Deploy'
+title: 'Blue-Green Deploy'
 image: codefresh/k8s-blue-green:master
 description: 'Perform blue/green deployments on a Kubernetes cluster'
 category:
