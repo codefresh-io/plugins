@@ -1,0 +1,3 @@
+     canaryDeploy:
+        title: Deploying new version ${{CF_SHORT_REVISION}}
+        image: codefresh/k8s-canary:master

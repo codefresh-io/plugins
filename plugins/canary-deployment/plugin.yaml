@@ -1,0 +1,26 @@
+title: Canary Deployment
+image: codefresh/k8s-canary:master
+description: Perform canary deployments on a Kubernetes cluster.
+category:
+  - Featured
+source: 'https://github.com/codefresh-io/k8s-canary-deployment'
+logo: 'https://raw.githubusercontent.com/codefresh-io/plugins/new-pipeline/plugins/vault/logo.jpg'
+maintainers:
+  - name: Kostis
+envs:
+  - name: WORKING_VOLUME
+    description: Working Volume
+  - name: SERVICE_NAME
+    description: Service Name
+  - name: DEPLOYMENT_NAME
+    description: Deployment Name
+  - name: TRAFFIC_INCREMENT
+    description: Traffic Increment
+  - name: NEW_VERSION
+    description: New Version
+  - name: SLEEP_SECONDS
+    description: Sleep Seconds
+  - name: NAMESPACE
+    description: Namespace
+  - name: KUBE_CONTEXT
+    description: Kubernetes Context

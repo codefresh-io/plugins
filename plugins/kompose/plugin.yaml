@@ -1,34 +1,24 @@
-image: codefresh/plugin-helm
-tag: v1.5.0
-version: 1.0.0
+title: Codefresh Kompose
+image: codefresh/plugin-kompose:v1.5.0
 description: Release a Docker Compose to Kubernetes
-keywords:
-  - docker-compose
-  - docker
-  - kompose
-  - kubernetes
-home: https://github.com/codefresh-io/cf-kompose-plugin
-sources:
-  - https://github.com/codefresh-io/cf-kompose-plugin
-maintainers: # (optional)
+category:
+  - Featured
+source: 'https://github.com/codefresh-io/cf-kompose-plugin'
+logo: 'http://cdn.rancher.com/wp-content/uploads/2016/04/20182217/compose-300x295.png'
+maintainers:
   - name: Alexei Ledenev
-    email: alexei@codefresh.io
-icon: http://cdn.rancher.com/wp-content/uploads/2016/04/20182217/compose-300x295.png
 envs:
   - name: KUBE_CONTEXT
-    type: required
-    description: Kubernetes context to use
+    description: 'Kubernetes context to use (required)'
   - name: FILE
-    description: Docker Compose file to deploy (default "docker-compose.yaml` file)
+    description: 'Docker Compose file to deploy (default docker-compose.yaml file)'
   - name: NAMESPACE
-    description: target Kubernetes namespace (default "default")
+    description: 'target Kubernetes namespace (default "default")'
   - name: VOLUMES
-    description: volumes to be generated ("persistentVolumeClaim"|"emptyDir") (default "persistentVolumeClaim")
+    description: 'volumes to be generated ("persistentVolumeClaim"|"emptyDir") (default "persistentVolumeClaim")'
   - name: REPLICAS
-    description: specify the number of replicas generated (default 1)
+    description: 'specify the number of replicas generated (default 1)'
   - name: DRY_RUN
-    description: do a "dry run" (print out) deployment (do not install anything, useful for Debug)
+    description: 'do a "dry run" (print out) deployment (do not install anything, useful for Debug)'
   - name: DEBUG
-    description: print verbose install output
-context:
-  - kind: kubernetes
+    description: 'print verbose install output'

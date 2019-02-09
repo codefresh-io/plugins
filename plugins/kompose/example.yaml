@@ -1,0 +1,2 @@
+  release_to_env:
+    image: codefresh/plugin-kompose:v1.5.0

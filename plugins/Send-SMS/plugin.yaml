@@ -1,0 +1,20 @@
+title: Send SMS
+image: codefresh/twilioplugin:latest
+description: Send SMS notifications via Twillio
+category:
+  - Featured
+source: 'https://github.com/codefresh-io/plugins/tree/master/plugins/twilio'
+logo: 'https://raw.githubusercontent.com/codefresh-io/plugins/new-pipeline/plugins/vault/logo.jpg'
+maintainers:
+  - name: Pasha Kostohrys
+envs:
+  - name: TWILIO_SID
+    description: Your account SID from Twilio console
+  - name: TWILIO_TOKEN
+    description: Your API Auth Token from Twilio console
+  - name: TWILIO_PHONE_FROM
+    description: Phone number from which messages will be sent
+  - name: TWILIO_PHONE_TO
+    description: Phone number to which messages will be sent
+  - name: TWILIO_TYPE
+    description: 'Type of your message [build - send info about your build via Codefresh, default - Send message with statc text]'

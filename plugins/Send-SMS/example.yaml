@@ -1,0 +1,3 @@
+      TestSMS:
+        title: Test SMS
+        image: codefresh/twilioplugin:latest
