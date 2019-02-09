@@ -13,6 +13,6 @@ envs:
   - name: LABELS
     description: The comma separated list of labels you would like to apply to the merge request
   - name: PROJECT_ID
-    description: The ID of the GitLab project. Optional (the default value is formed from Codefresh variables)
+    description: 'The ID of the GitLab project. Optional (the default value is formed from Codefresh variables)'
   - name: MERGE_REQUEST_ID
-    description: The ID of the merge request. Optional (the default value is formed from Codefresh variables)
+    description: 'The ID of the merge request. Optional (the default value is formed from Codefresh variables)'
