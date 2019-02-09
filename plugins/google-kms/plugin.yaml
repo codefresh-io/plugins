@@ -1,0 +1,20 @@
+title: Use Google KMS
+image: codefresh/google-kms:latest
+description: Facilitates work with Google Key Management Service for such operations as encrypting and decrypting
+category:
+  - Featured
+source: 'https://github.com/codefresh-io/plugins/blob/master/plugins/google-kms'
+logo: 'https://raw.githubusercontent.com/codefresh-io/plugins/new-pipeline/plugins/vault/logo.jpg'
+maintainers:
+  - name: Will Malone
+envs:
+  - name: KMS_PROJECT
+    description: GCP project name in which your KMS entities are present
+  - name: KMS_LOCATION
+    description: Google KMS location
+  - name: KMS_KEYRING
+    description: Google KMS keyring
+  - name: KMS_KEY
+    description: Google KMS key
+  - name: GCP_SA_KEY
+    description: Google Service Account Key (JSON)

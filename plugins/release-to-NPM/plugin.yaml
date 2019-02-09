@@ -1,12 +1,12 @@
-title: release-to-npm plugin
+title: Publish on NPM
 image: codefresh/release-to-npm:latest
-description: The release-to-npm can be used to publish images to npm
+description: Publishes a nodejs package to NPM registry
 category:
   - Featured
-source: 'https://github.com/codefresh-io/'
+source: 'https://github.com/codefresh-io/plugins/blob/master/plugins/release-to-NPM'
 logo: 'https://authy.com/wp-content/uploads/npm-logo.png'
 maintainers:
-  - name: NA
+  - name: Jakob Stuart
 envs:
   - name: NPM_TOKEN 
     description: 'token of npm account (required)'
