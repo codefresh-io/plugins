@@ -1,0 +1,2 @@
+  release_to_env:
+    image: codefresh/plugin-helm:2.7.2

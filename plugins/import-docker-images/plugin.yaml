@@ -1,28 +1,22 @@
-image: codefresh/import-images
-tag: master
-version: 0.3.0
+title: Import Docker Images
+image: codefresh/import-images:master
 description: Import metadata for existing Docker images into Codefresh
-keywords:
-  - docker
-home: https://github.com/codefresh-io/cf-import-image
-sources:
-  - https://github.com/codefresh-io/cf-import-image
-maintainers: # (optional)
+category:
+  - Featured
+source: 'https://github.com/codefresh-io/cf-import-image'
+logo: 'https://raw.githubusercontent.com/codefresh-io/plugins/new-pipeline/plugins/vault/logo.jpg'
+maintainers:
   - name: Alexei Ledenev
-    email: alexei@codefresh.io
-icon: https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2016/11/1479211772build-image-with-dockerfile_feature.jpg
 envs:
   - name: IMAGES
-    type: required
-    description: list of comma separated image names (with tags)
+    description: 'list of comma separated image names (with tags)(required)'
   - name: REGISTRY
     description: registry DNS name (including port if needed, default to `docker.io`)
-  - USERNAME`: Docker registry user name (optional)
+  - name: USERNAME
+    description: 'Docker registry user name (optional)'
   - name: PASSWORD
-    description: Docker registry password (optional)
+    description: 'Docker registry password (optional)'
   - name: CF_URL
-    type: required
-    description: Codefresh URL, for example https://g.codefresh.io
+    description: 'Codefresh URL, for example https://g.codefresh.io (required)'
   - name: CF_API_TOKEN
-    type: required
-    description: Codefresh API Token
+    description: 'Codefresh API Token (required)'

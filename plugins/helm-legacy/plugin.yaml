@@ -1,27 +1,19 @@
-image: codefresh/plugin-helm
-tag: 2.7.2
-version: 1.1.0
-description: Release a Helm chart (update or install). There is a new Helm plugin with added capabilities, we are keeping this plugin as is for backward-compatibility. The new plugin is at /incubator/helm (https://github.com/codefresh-io/plugins/tree/master/incubator/helm)
-keywords:
-  - helm
-  - kubernetes
-home: https://github.com/codefresh-io/cf-plugin-helm
-sources:
-  - https://github.com/codefresh-io/cf-plugin-helm
-maintainers: # (optional)
+title: Vault Plugin
+image: codefresh/plugin-helm:2.7.2
+description: 'Release a Helm chart (update or install). There is a new Helm plugin with added capabilities, we are keeping this plugin as is for backward-compatibility. The new plugin is at /incubator/helm (https://github.com/codefresh-io/plugins/tree/master/incubator/helm)'
+category:
+  - Featured
+source: 'https://github.com/codefresh-io/cf-plugin-helm'
+logo: 'https://raw.githubusercontent.com/codefresh-io/plugins/new-pipeline/plugins/vault/logo.jpg'
+maintainers:
   - name: Alexei Ledenev
-    email: alexei@codefresh.io
-icon: https://avatars0.githubusercontent.com/u/29493517?v=4&s=400
 envs:
   - name: KUBE_CONTEXT
-    type: required
-    description: Kubernetes context to use
+    description: 'Kubernetes context to use (required)'
   - name: CHART_NAME
-    type: required
-    description: Helm chart name to release
+    description: 'Helm chart name to release (required)'
   - name: RELEASE_NAME
-    type: required
-    description: Helm release name
+    description: 'Helm release name (required)'
   - name: NAMESPACE
     description: target Kubernetes namespace
   - name: CHART_VERSION
@@ -29,12 +21,10 @@ envs:
   - name: CHART_REPO_URL
     description: Helm chart repository URL
   - name: DRY_RUN
-    description: do a "dry run" installation (do not install anything, useful for Debug)
+    description: 'do a "dry run" installation (do not install anything, useful for Debug)'
   - name: DEBUG
     description: print verbose install output
   - name: WAIT
     description: block step execution till installation completed and all Kubernetes resources are ready
   - name: TIMEOUT
-    description: wait timeout (5min by default)
-context:
-  - kind: kubernetes
+    description: 'wait timeout (5min by default)'

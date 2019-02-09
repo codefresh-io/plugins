@@ -1,0 +1,4 @@
+  import_images:
+    title: Importing images
+    description: import Docker images form external registry
+    image: codefresh/import-images
