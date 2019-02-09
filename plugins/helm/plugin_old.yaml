@@ -1,0 +1,36 @@
+image: codefresh/cfstep-helm
+version: 1.0.0
+description: Release a Helm chart (update or install)
+keywords:
+  - helm
+  - kubernetes
+home: https://github.com/codefresh-io/pugins/tree/master/incubator/helm
+sources:
+  - https://github.com/codefresh-contrib/cfplugin-step
+maintainers: # (optional)
+  - name: Itay Shakury
+    email: itaysk@codefresh.io
+icon: https://avatars0.githubusercontent.com/u/29493517?v=4&s=400
+envs:
+  - name: KUBE_CONTEXT
+    type: required
+    description: Kubernetes context to use (the name of the cluster as configured in Codefresh)
+  - name: CHART_NAME
+    type: required
+    description: Helm chart name to release (path to chart folder, or name of packaged chart)
+  - name: RELEASE_NAME
+    description: Helm release name
+  - name: NAMESPACE
+    description: target Kubernetes namespace
+  - name: TILLER_NAMESPACE
+    description: Kubernetes namespace where tiller is at
+  - name: CHART_VERSION
+    description: application chart version to install
+  - name: CHART_REPO_URL
+    description: Helm chart repository URL (overriden by injected Helm repository context)
+  - name: CUSTOMFILE_<name>
+    description: Values file to provide to Helm (as --file). see usage information below.
+  - name: CUSTOM_<name>
+    description: Value to provide to Helm (as --set). see usage information below.
+context:
+  - kind: kubernetes

@@ -1,28 +1,20 @@
-image: codefresh/plugin-gke
-tag: latest
-version: 0.1.0
+title: GKE Plugin
+image: codefresh/plugin-gke:latest
 description: Codefresh gke plugin
-keywords:
-  - kubernetes
-  - gke
-  - gcloud
-home: https://github.com/codefresh-io/plugin-gke
-sources:
-  - https://github.com/codefresh-io/plugin-gke
+category:
+  - Featured
+source: 'https://github.com/codefresh-io/plugin-gke'
+logo: 'https://raw.githubusercontent.com/codefresh-io/plugins/new-pipeline/plugins/vault/logo.jpg'
 maintainers:
   - name: Kosta Klevensky
-    email: kosta@codefresh.io
-icon: https://cloud.google.com/images/products/logos/cloud-symbol.png
 envs:
-  - name: GOOGLE_SERVICE_ACCOUNT_KEY
-    type: required
+  - name: VAULT_ADDR 
+    description: 'Vault server URI. Example: https://vault.testdomain.io:8200 (required)'
+  - name: GOOGLE_SERVICE_ACCOUNT_KEY (required)
     description: Google Service Account Key value
   - name: CLOUDSDK_COMPUTE_ZONE
-    type: optional
     description: one of valid Google Compute zones
   - name: CLOUDSDK_COMPUTE_REGION
-    type: optional
-    description: one of valid Google Compute regions. If both CLOUDSDK_COMPUTE_ZONE and CLOUDSDK_COMPUTE_REGION are not set, default is us-central1
+    description: 'one of valid Google Compute regions. If both CLOUDSDK_COMPUTE_ZONE and CLOUDSDK_COMPUTE_REGION are not set, default is us-central1'
   - name: GKE_CLUSTER_NAME
-    type: optional
-    description: Name of the cluster to create/delete. Can be also set from gke-create command line. It is generated if not set
+    description: 'Name of the cluster to create/delete. Can be also set from gke-create command line. It is generated if not set'
