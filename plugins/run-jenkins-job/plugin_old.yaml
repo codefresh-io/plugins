@@ -1,0 +1,29 @@
+image: codefresh/run-jenkins-jobs
+tag: master
+version: 0.1.0
+description: Run jenkins job from codefresh pipeline
+keywords:
+  - docker
+  - jenkins
+home: https://github.com/codefresh-io/cf-run-jenkins-jobs
+sources:
+  - https://github.com/codefresh-io/cf-run-jenkins-jobs
+maintainers: # (optional)
+  - name: Vadim Waisman
+    email: vadim@codefresh.io
+  - name: Jenny Passi
+    email: jenny@codefresh.io
+icon: https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2016/11/1479211772build-image-with-dockerfile_feature.jpg
+envs:
+  - name: JENKINS_USERNAME
+    type: required
+    description: jenkins username
+  - name: JENKINS_TOKEN
+    type: required
+    description: jenkins token
+  - name: JENKINS_URL
+    type: required
+    description: jenkins machine url
+  - name: JENKINS_JOB
+    type: required
+    description: list of jenkins jobs to run separated by spaces
