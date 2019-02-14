@@ -8,7 +8,7 @@ Dockerhub repo: https://hub.docker.com/r/codefresh/cfstep-gitclonerssh
 |--|--|--|--|--|
 | REMOTE_URL | null | string | Yes | Reporitory SSH URL (e.g. `git@github.com:my-user/my-repo.git`) |
 | BRANCH | master | string | No | Branch name to checkout (e.g. `master`) |
-| SSH_KEY | null | string | Yes | Private SSH key to access the repository. To convert it to single line string, and set a value for this var you can execute: `cat ~/.ssh/my_ssh_key_file | tr '\n' ','`. This assumes that `SPLIT_CHAR` will be set to `,` |
+| SSH_KEY | null | string | Yes | Private SSH key to access the repository. To convert it to single line string, and set a value for this var you can execute: `cat ~/.ssh/my_ssh_key_file \| tr '\n' ','`. This assumes that `SPLIT_CHAR` will be set to `,` |
 | SPLIT_CHAR | null | string | Yes | Split character you’ve used to replace newline in SSH key (`SSH_KEY`). Recommendation: use `,` (comma character)|
 | CLONE_PATH | working directory | string | No | Path where `git clone` is going to be executed. A "`repo-name`" directory will be created there|
 
