@@ -1,1 +1,0 @@
-https://github.com/otomato-gh/cf-plugin-example
