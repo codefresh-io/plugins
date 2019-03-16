@@ -12,4 +12,5 @@
 { "name" : "gitter-notifier", "url": "https://github.com/codefresh-contrib/gitter-notifier" },
 { "name" : "google-kms", "url": "https://github.com/codefresh-contrib/google-kms" },
 { "name" : "jira-cli", "url": "https://github.com/codefresh-contrib/jira-cli-docker" },
-{ "name" : "gke-plugin", "url": "https://github.com/codefresh-contrib/plugin-gke" }]
+{ "name" : "gke-plugin", "url": "https://github.com/codefresh-contrib/plugin-gke" },
+{ "name" : "slack-notifier", "url": "https://github.com/codefresh-contrib/slack-notifier" }]
