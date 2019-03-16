@@ -6,4 +6,5 @@
 { "name" : "import-image", "url": "https://github.com/codefresh-contrib/cf-import-image" },
 { "name" : "kompose", "url": "https://github.com/codefresh-contrib/cf-kompose-plugin" },
 { "name" : "aqua-scan", "url": "https://github.com/codefresh-contrib/cfstep-aqua" },
-{ "name" : "makisu", "url": "https://github.com/codefresh-contrib/cfstep-makisu" }]
+{ "name" : "makisu", "url": "https://github.com/codefresh-contrib/cfstep-makisu" }, 
+{ "name" : "paclair", "url": "https://github.com/codefresh-contrib/cfstep-paclair" }]
