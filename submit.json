@@ -1,3 +1,5 @@
 [{ "name" : "example", "url": "https://github.com/otomato-gh/cf-plugin-example" },
 { "name" : "cfstep-github", "url": "https://github.com/codefresh-contrib/cfstep-github-release" },
-{ "name" : "github-pr-plugin", "url" : "https://github.com/codefresh-contrib/github-pr-plugin" }]
+{ "name" : "github-pr-plugin", "url" : "https://github.com/codefresh-contrib/github-pr-plugin" },
+{ "name" : "anchore", "url": "https://github.com/codefresh-contrib/anchore-plugin" }]
+
