@@ -2,18 +2,17 @@
 
 The Codefresh Plugins project accepts contributions via GitHub pull requests. This document outlines the process to help get your contribution accepted.
 
-
-### Reporting a Bug in Plugin
-
-This repository is used by Plugin developers for maintaining the official plugins for Codefresh. 
-
 ### How to Contribute a Plugin
 
 1. Develop and test your plugin
-2. Fork this repository
-2. Choose the correct folder for your plugin based on the information in the [Repository Structure](docs/plugin.md#plugin-file-structure) section
+2. Create a github repository for your plugin containing the following:
+  - all the source files needed to create the plugin
+  - a Dockerfile that describes how to package your plugin in a Docker image
+  - a plugin.yaml file (see further for the schema)
+  - an example.yaml file that show how to use your plugin in a Codefresh pipeline
 3. Ensure your Plugin follows the [technical](#technical-requirements) and [documentation](#documentation-requirements) guidelines, described below
-4. Update [Plugin Catalog](CATALOG.md)
+4. Fork this repository (codefresh-io/plugins)
+4. Update [plugin submission file](submit.json) with your plugin properties
 5. Submit a pull request
 
 ***NOTE***: In order to make testing and merging of PRs easier, please submit changes to multiple plugins in separate PRs.
@@ -31,11 +30,8 @@ This repository is used by Plugin developers for maintaining the official plugin
 * Must include an in-depth `README.md`, including:
     * Short description of the Plugin
     * Customization: explaining all required variables and their defaults
-* Must include a short `NOTES.txt`, including:
-    * Any relevant post/pre-installation information for the Plugin
-    * Instructions on how to access the application or service provided by the Plugin
 
-#### Merge approval and release process
+### Merge approval and release process
 
 A Codefresh Plugins maintainer will review the Plugin submission, and start a validation job in the CI to verify the technical requirements of the Plugin. A maintainer may add "LGTM" (Looks Good To Me) or an equivalent comment to indicate that a PR is acceptable. Any change requires at least one LGTM. No pull requests can be merged until at least one maintainer signs off with an LGTM.
 
