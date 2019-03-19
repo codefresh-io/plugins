@@ -13,4 +13,10 @@
 { "name" : "google-kms", "url": "https://github.com/codefresh-contrib/google-kms" },
 { "name" : "jira-cli", "url": "https://github.com/codefresh-contrib/jira-cli-docker" },
 { "name" : "gke-plugin", "url": "https://github.com/codefresh-contrib/plugin-gke" },
-{ "name" : "slack-notifier", "url": "https://github.com/codefresh-contrib/slack-notifier" }]
+{ "name" : "slack-notifier", "url": "https://github.com/codefresh-contrib/slack-notifier" },
+{ "name" : "cf-gitlab-mr-annotate", "url": "https://github.com/codefresh-contrib/cf-gitlab-mr-annotate" },
+{ "name" : "cf-vault-plugin", "url": "https://github.com/codefresh-contrib/cf-vault-plugin" },
+{ "name" : "k8s-blue-green-deployment", "url": "https://github.com/codefresh-contrib/k8s-blue-green-deployment" },
+{ "name" : "telegram-notifier", "url": "https://github.com/codefresh-contrib/telegram-notifier" },
+{ "name" : "send-sms", "url": "https://github.com/codefresh-contrib/send-sms" },
+{ "name" : "slack-message-sender", "url": "https://github.com/codefresh-contrib/slack-message-sender" }]
