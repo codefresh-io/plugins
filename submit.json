@@ -1,16 +1,1 @@
-[{ "name" : "example", "url": "https://github.com/otomato-gh/cf-plugin-example" },
-{ "name" : "github-release", "url": "https://github.com/codefresh-contrib/cfstep-github-release" },
-{ "name" : "github-pr", "url" : "https://github.com/codefresh-contrib/github-pr-plugin" },
-{ "name" : "anchore", "url": "https://github.com/codefresh-contrib/anchore-plugin" },
-{ "name" : "ecs-deploy", "url": "https://github.com/codefresh-contrib/ecs-deploy" },
-{ "name" : "import-image", "url": "https://github.com/codefresh-contrib/cf-import-image" },
-{ "name" : "kompose", "url": "https://github.com/codefresh-contrib/cf-kompose-plugin" },
-{ "name" : "aqua-scan", "url": "https://github.com/codefresh-contrib/cfstep-aqua" },
-{ "name" : "makisu", "url": "https://github.com/codefresh-contrib/cfstep-makisu" }, 
-{ "name" : "paclair", "url": "https://github.com/codefresh-contrib/cfstep-paclair" },
-{ "name" : "docker-service", "url": "https://github.com/codefresh-contrib/docker-service" },
-{ "name" : "gitter-notifier", "url": "https://github.com/codefresh-contrib/gitter-notifier" },
-{ "name" : "google-kms", "url": "https://github.com/codefresh-contrib/google-kms" },
-{ "name" : "jira-cli", "url": "https://github.com/codefresh-contrib/jira-cli-docker" },
-{ "name" : "gke-plugin", "url": "https://github.com/codefresh-contrib/plugin-gke" },
-{ "name" : "slack-notifier", "url": "https://github.com/codefresh-contrib/slack-notifier" }]
+[{ "name" : "example", "url": "https://github.com/codefresh-contrib/cf-gitlab-mr-annotate" }]
