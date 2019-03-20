@@ -19,4 +19,9 @@
 { "name" : "k8s-blue-green-deployment", "url": "https://github.com/codefresh-contrib/k8s-blue-green-deployment" },
 { "name" : "telegram-notifier", "url": "https://github.com/codefresh-contrib/telegram-notifier" },
 { "name" : "send-sms", "url": "https://github.com/codefresh-contrib/send-sms" },
-{ "name" : "slack-message-sender", "url": "https://github.com/codefresh-contrib/slack-message-sender" }]
+{ "name" : "azure-build-plugin", "url": "https://github.com/codefresh-contrib/azure-build-plugin" },
+{ "name" : "cf-deploy-dcos", "url": "https://github.com/codefresh-contrib/cf-deploy-dcos" },
+{ "name" : "cf-run-jenkins-jobs", "url": "https://github.com/codefresh-contrib/cf-run-jenkins-jobs" },
+{ "name" : "cfstep-gitclonerssh", "url": "https://github.com/codefresh-contrib/cfstep-gitclonerssh" },
+{ "name" : "cfstep-gitsubmodules", "url": "https://github.com/codefresh-contrib/cfstep-gitsubmodules" },
+{ "name" : "sendgridplugin", "url": "https://github.com/codefresh-contrib/sendgridplugin" }]
